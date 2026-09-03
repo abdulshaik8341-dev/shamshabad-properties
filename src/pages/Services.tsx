@@ -6,18 +6,24 @@ import {
   Building,
   Home,
   Factory,
-  Scale,
-  FileSearch,
-  Ruler,
-  Landmark,
-  Banknote,
+  FileCheck,
+  MapPinned,
   TrendingUp,
+  ScrollText,
+  Landmark,
+  Repeat,
+  Globe,
+  LifeBuoy,
   ArrowRight,
   CheckCircle2,
   ShieldCheck,
   Award,
   Users,
   Clock,
+  PhoneCall,
+  ClipboardList,
+  PenLine,
+  KeyRound,
 } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import ScrollReveal from '@/components/ScrollReveal';
@@ -75,40 +81,85 @@ const mainServices = [
 
 const supportServices = [
   {
-    icon: Scale,
-    title: 'Legal Property Verification',
+    icon: MapPin,
+    title: 'Residential Plot Sales',
     description:
-      'Comprehensive legal verification of property documents, titles, and ownership records for safe transactions.',
+      'Access a wide range of DTCP & HMDA approved residential plots across Shamshabad and Maheshwaram. We offer transparent pricing and complete documentation support for every plot we sell.',
   },
   {
-    icon: FileSearch,
-    title: '70+ Year Document Verification',
+    icon: FileCheck,
+    title: 'Legal Documentation',
     description:
-      'In-depth analysis of property records spanning 70+ years to ensure absolute title clarity.',
+      'Our expert legal team assists with title verification, sale deed preparation, encumbrance certificate checks, link document review and all statutory registrations — ensuring a 100% risk-free purchase.',
   },
   {
-    icon: Ruler,
-    title: 'Survey & Measurement Assistance',
+    icon: MapPinned,
+    title: 'Free Site Visits',
     description:
-      'Professional land survey and measurement services with certified surveyors and accurate reporting.',
+      'We will guide you to site visits to all our venture locations. Experience the infrastructure, surroundings and neighbourhood before making your investment decision.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Investment Advisory',
+    description:
+      'Our seasoned advisors analyse market trends, micro-market data, and growth corridors to guide you toward the best investment. We help you maximise ROI on your land purchase.',
+  },
+  {
+    icon: ScrollText,
+    title: 'Property Registration',
+    description:
+      'We handle the entire Sub-Registrar office process including appointment scheduling, document preparation, stamp duty calculation and post-registration formalities — completely hassle-free.',
   },
   {
     icon: Landmark,
     title: 'Home Loan Assistance',
     description:
-      'End-to-end home loan processing assistance with partnerships across major banks and NBFCs.',
+      'We have partnerships with leading banks and NBFCs to provide our clients with competitive home loan and plot loan options. Get pre-approved quickly with our dedicated finance desk.',
   },
   {
-    icon: Banknote,
-    title: 'Mortgage Loan Processing',
+    icon: Repeat,
+    title: 'Resale & Resettlement',
     description:
-      'Hassle-free mortgage loan processing with competitive rates and quick disbursement timelines.',
+      'Looking to sell your existing plot or buy a resale property in the Shamshabad belt? Our team handles end-to-end resale transactions with fair valuation and quick closures.',
   },
   {
-    icon: TrendingUp,
-    title: 'Investment Consulting',
+    icon: Globe,
+    title: 'NRI Investment Support',
     description:
-      'Expert guidance on real estate investment strategies, market trends, and portfolio diversification.',
+      'Special end-to-end support for NRI investors including virtual site tours, power of attorney assistance, FEMA compliance, and seamless remote documentation for international clients.',
+  },
+  {
+    icon: LifeBuoy,
+    title: 'Post-Sale Support',
+    description:
+      "Our relationship doesn't end at registration. We offer ongoing support for plot development, utility connections, layout plan approvals, and any future queries you may have.",
+  },
+];
+
+const processSteps = [
+  {
+    icon: PhoneCall,
+    title: 'Enquiry & Consultation',
+    description:
+      'Reach out to us via call, WhatsApp or the contact form. Our advisor understands your requirements and shortlists the best-fit venture for you.',
+  },
+  {
+    icon: MapPinned,
+    title: 'Site Visit',
+    description:
+      'We schedule a free guided site visit at your convenience. Explore the venture, infrastructure, surroundings and ask all your questions in person.',
+  },
+  {
+    icon: ClipboardList,
+    title: 'Documentation & Agreement',
+    description:
+      'Once you choose your plot, we walk you through the complete legal documentation — title deeds, sale agreement, encumbrance verification and more.',
+  },
+  {
+    icon: KeyRound,
+    title: 'Registration & Handover',
+    description:
+      'We manage the Sub-Registrar registration process end-to-end and hand over the plot documents. Your dream investment is now officially yours!',
   },
 ];
 
@@ -121,24 +172,24 @@ const stats = [
 
 const whyChooseUs = [
   {
+    icon: Clock,
+    title: '10+ Years of Experience',
+    desc: 'Two decades of trusted Real Estate practice in South Hyderabad with a proven track record of successful transactions.',
+  },
+  {
     icon: ShieldCheck,
-    title: 'Verified Titles',
-    desc: 'Every plot comes with fully verified legal documentation and clear ownership records.',
+    title: '100% Legal Transparency',
+    desc: 'All ventures carry DTCP/HMDA approvals. We share all legal documents upfront with no hidden surprises.',
   },
   {
     icon: Award,
-    title: 'HMDA & DTCP Approved',
-    desc: 'All our ventures carry government-approved layout sanctions with RERA compliance.',
+    title: 'Best Price Guarantee',
+    desc: 'We offer fair, market-aligned pricing with flexible payment plans — ensuring maximum value for your investment.',
   },
   {
     icon: Users,
-    title: 'Trusted by 500+ Families',
-    desc: 'A growing community of satisfied buyers who found their perfect plot with us.',
-  },
-  {
-    icon: Clock,
-    title: '24-Hour Response',
-    desc: 'Our team responds to every enquiry within 24 hours — no waiting, no delays.',
+    title: 'Dedicated After-Sales Support',
+    desc: "Your relationship with us doesn't end at purchase. We provide ongoing support for all property-related needs.",
   },
 ];
 
@@ -159,13 +210,13 @@ export default function Services() {
           <ScrollReveal>
             <p className="eyebrow text-gold-light mb-3">Our Services</p>
             <h1 className="font-serif text-4xl lg:text-5xl font-bold text-ivory leading-tight max-w-3xl">
-              Comprehensive Real Estate Solutions, End to End
+              Everything You Need, Under One Roof
             </h1>
             <div className="gold-divider mt-5" />
             <p className="mt-6 text-lg text-ivory/80 max-w-2xl leading-relaxed">
-              From agricultural land sales to investment consulting, we offer a
-              full range of real estate services tailored to buyers, investors,
-              and NRI clients across the Shamshabad corridor.
+              We are more than just a real estate firm. We are your complete
+              property partner — from the very first enquiry to the final
+              registration and beyond.
             </p>
           </ScrollReveal>
         </div>
@@ -229,13 +280,13 @@ export default function Services() {
       <section className="py-20 lg:py-28 bg-cream">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Beyond Buying & Selling"
-            title="Support Services"
-            subtitle="We don't just sell plots — we handle the legal, financial, and advisory work that makes your investment safe and stress-free."
+            eyebrow="Complete Property Support"
+            title="Our Support Services"
+            subtitle="We handle everything from legal documentation to registration, loans to NRI support — so your property journey is smooth from start to finish."
           />
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {supportServices.map((s, i) => (
-              <ScrollReveal key={s.title} delay={i * 100}>
+              <ScrollReveal key={s.title} delay={i * 80}>
                 <div className="group h-full rounded-2xl bg-white p-7 shadow-lg ring-1 ring-emerald/5 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
                   <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
                     <s.icon className="h-7 w-7" />
@@ -253,8 +304,39 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Why choose us */}
+      {/* Process steps */}
       <section className="py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="How We Work"
+            title="Our Simple 4-Step Process"
+            subtitle="From your first call to the moment you hold your registered plot documents, we make every step effortless."
+          />
+          <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {processSteps.map((step, i) => (
+              <ScrollReveal key={step.title} delay={i * 100}>
+                <div className="relative h-full rounded-2xl bg-cream p-7 transition-all duration-500 hover:bg-white hover:shadow-lg hover:-translate-y-1">
+                  <span className="absolute top-4 right-5 font-serif text-5xl font-bold text-gold/15">
+                    {i + 1}
+                  </span>
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald text-gold">
+                    <step.icon className="h-7 w-7" />
+                  </div>
+                  <h3 className="mt-5 font-serif text-lg font-bold text-emerald">
+                    {step.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-ink-mid">
+                    {step.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why choose us */}
+      <section className="py-20 lg:py-28 bg-cream">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Why Choose Us"
@@ -264,7 +346,7 @@ export default function Services() {
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyChooseUs.map((w, i) => (
               <ScrollReveal key={w.title} delay={i * 100}>
-                <div className="group h-full rounded-2xl bg-cream p-7 text-center transition-all duration-500 hover:bg-white hover:shadow-lg hover:-translate-y-1">
+                <div className="group h-full rounded-2xl bg-white p-7 text-center shadow-lg ring-1 ring-emerald/5 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
                   <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
                     <w.icon className="h-7 w-7" />
                   </div>
@@ -286,15 +368,15 @@ export default function Services() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-serif text-3xl lg:text-4xl font-bold text-ivory leading-tight">
-              Ready to Explore Your Options?
+              Ready to Start Your Real Estate Journey?
             </h2>
             <p className="mt-5 text-ivory/70 max-w-2xl mx-auto">
               Whether you're buying your first plot, investing in land, or need
-              help with legal verification — our team is ready to assist you.
+              help with legal documentation — our team is ready to assist you.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link to="/contact" className="btn-primary">
-                Enquire Now
+                Get Free Consultation
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link to="/ventures" className="btn-glass-light">
