@@ -83,6 +83,16 @@ export default function Navbar() {
               About Us
             </Link>
           </li>
+          <li>
+            <Link
+              to="/services"
+              className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
+                isActive('/services') ? 'text-gold' : 'text-ink hover:text-emerald'
+              }`}
+            >
+              Services
+            </Link>
+          </li>
           <li
             className="relative"
             onMouseEnter={() => setVenturesOpen(true)}
@@ -237,6 +247,12 @@ export default function Navbar() {
             className="block px-4 py-3 text-sm font-medium text-ink rounded-lg hover:bg-cream"
           >
             About Us
+          </Link>
+          <Link
+            to="/services"
+            className="block px-4 py-3 text-sm font-medium text-ink rounded-lg hover:bg-cream"
+          >
+            Services
           </Link>
           <button
             onClick={() => setMobileVenturesOpen((v) => !v)}
