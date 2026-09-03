@@ -29,7 +29,7 @@ const mainServices = [
     description:
       'Premium agricultural land in high-growth zones around Shamshabad with verified legal documentation and clear titles.',
     image:
-      'https://images.pexels.com/photos/36946235/pexels-photo-36946235.png?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://www.yahaproperties.in/assets/service-agricultural-VI9Zpa8W.jpg',
   },
   {
     icon: MapPin,
@@ -37,7 +37,7 @@ const mainServices = [
     description:
       'HMDA & DTCP-approved residential plot layouts in prime locations with complete infrastructure and amenities.',
     image:
-      'https://images.pexels.com/photos/11201060/pexels-photo-11201060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://www.yahaproperties.in/assets/service-plots-B0gcHaQw.jpg',
   },
   {
     icon: Building2,
@@ -45,7 +45,7 @@ const mainServices = [
     description:
       'Secure, well-planned gated communities with modern amenities, landscaping, and 24/7 security.',
     image:
-      'https://images.pexels.com/photos/7937280/pexels-photo-7937280.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://www.yahaproperties.in/assets/service-gated-lXtPF8l7.jpg',
   },
   {
     icon: Building,
@@ -53,7 +53,7 @@ const mainServices = [
     description:
       'Modern apartments in premium locations with contemporary designs and top-notch construction quality.',
     image:
-      'https://images.pexels.com/photos/38000582/pexels-photo-38000582.png?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://www.yahaproperties.in/assets/service-apartments-DPSbrVnG.jpg',
   },
   {
     icon: Home,
@@ -61,7 +61,7 @@ const mainServices = [
     description:
       'Luxury villas and independent houses crafted with premium materials and thoughtful architecture.',
     image:
-      'https://images.pexels.com/photos/8082328/pexels-photo-8082328.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://www.yahaproperties.in/assets/service-villas-tefiJsKp.jpg',
   },
   {
     icon: Factory,
@@ -69,7 +69,7 @@ const mainServices = [
     description:
       'Strategic investments along the Shamshabad industrial corridor with high ROI potential.',
     image:
-      'https://images.pexels.com/photos/2425129/pexels-photo-2425129.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://www.yahaproperties.in/assets/service-industrial-C7bzgfrY.jpg',
   },
 ];
 
