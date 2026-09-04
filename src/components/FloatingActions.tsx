@@ -33,7 +33,7 @@ export default function FloatingActions() {
 
   return (
     <div
-      className={`fixed right-4 sm:right-6 top-[72%] -translate-y-1/2 z-50 flex flex-col gap-3 transition-all duration-500 ${
+      className={`fixed right-4 sm:right-6 top-[88%] -translate-y-1/2 z-50 flex flex-col gap-3 transition-all duration-500 ${
         visible ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'
       }`}
     >
