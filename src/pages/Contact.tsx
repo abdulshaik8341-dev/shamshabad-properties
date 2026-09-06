@@ -66,7 +66,7 @@ export default function Contact() {
     }
 
     const whatsappMessage = [
-      'Hello, I would like to enquire about Shamshabad Properties.',
+      'Hello, I would like to enquire about Shamshabad Real Estate.',
       `Name: ${data.name}`,
       `Phone: ${data.phone}`,
       `Email: ${data.email}`,

@@ -22,7 +22,7 @@ export default function FloatingActions() {
 
   const handleWhatsApp = () => {
     const msg = encodeURIComponent(
-      'Hello, I would like to enquire about Shamshabad Properties.'
+      'Hello, I would like to enquire about Shamshabad Real Estate.'
     );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank');
   };

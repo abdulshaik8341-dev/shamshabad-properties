@@ -18,14 +18,14 @@ export const blogPosts: BlogPost[] = [
       'With the airport, ORR and Pharma City driving growth, Shamshabad has become the most sought-after real estate corridor in South Hyderabad. Here\'s what makes it unique.',
     category: 'Market Insights',
     date: '2026-08-15',
-    author: 'Shamshabad Properties Team',
+    author: 'Shamshabad Real Estate Team',
     image: 'https://images.pexels.com/photos/4456656/pexels-photo-4456656.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     readTime: '5 min read',
     content: [
       'Shamshabad has transformed from a quiet village on Hyderabad\'s southern fringe into one of India\'s most actively watched real estate corridors. The catalyst is well-known — the Rajiv Gandhi International Airport — but the ripple effects extend far beyond aviation.',
       'The Outer Ring Road connects Shamshabad to the Financial District, HITEC City and Gachibowli in under 30 minutes. The upcoming Pharma City, the expansion of the Srisailam Highway and the proposed Regional Ring Road have created a multi-pole growth dynamic that few corridors in the country can match.',
       'For investors, the appeal is clear: land that was priced at a fraction of West Hyderabad values a decade ago is now appreciating steadily, but remains well below mature-market rates. DTCP and HMDA-approved plotted developments offer a lower-risk entry point compared to apartments, with the flexibility to build at one\'s own pace.',
-      'At Shamshabad Properties, we have spent years mapping the corridor\'s best micro-locations — from Tukkuguda to Maheshwaram to Muchintal. Our portfolio of 11 ventures covers every price point and lifestyle preference, so whether you are a first-time buyer or a seasoned investor, there is a Shamshabad address that fits your goals.',
+      'At Shamshabad Real Estate, we have spent years mapping the corridor\'s best micro-locations — from Tukkuguda to Maheshwaram to Muchintal. Our portfolio of 11 ventures covers every price point and lifestyle preference, so whether you are a first-time buyer or a seasoned investor, there is a Shamshabad address that fits your goals.',
     ],
   },
   {
@@ -35,7 +35,7 @@ export const blogPosts: BlogPost[] = [
       'Understanding the difference between HMDA and DTCP approvals is essential before buying a residential plot. We break down what each means for your investment.',
     category: 'Buying Guide',
     date: '2026-07-28',
-    author: 'Shamshabad Properties Team',
+    author: 'Shamshabad Real Estate Team',
     image: 'https://images.pexels.com/photos/8470844/pexels-photo-8470844.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     readTime: '4 min read',
     content: [
@@ -52,7 +52,7 @@ export const blogPosts: BlogPost[] = [
       'Not all gated-layout amenities are created equal. Here are the five that consistently drive higher resale prices and faster sales in the Shamshabad corridor.',
     category: 'Investment Tips',
     date: '2026-07-10',
-    author: 'Shamshabad Properties Team',
+    author: 'Shamshabad Real Estate Team',
     image: 'https://images.pexels.com/photos/7415055/pexels-photo-7415055.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     readTime: '4 min read',
     content: [
@@ -69,7 +69,7 @@ export const blogPosts: BlogPost[] = [
       'From the Regional Ring Road to the Metro extension, here\'s a round-up of the infrastructure projects set to reshape Shamshabad in the coming year.',
     category: 'Infrastructure',
     date: '2026-06-20',
-    author: 'Shamshabad Properties Team',
+    author: 'Shamshabad Real Estate Team',
     image: 'https://images.pexels.com/photos/35235131/pexels-photo-35235131.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     readTime: '6 min read',
     content: [
@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
       'Buying land for the first time can feel daunting. Use this step-by-step checklist to make sure you cover every essential before signing.',
     category: 'Buying Guide',
     date: '2026-05-30',
-    author: 'Shamshabad Properties Team',
+    author: 'Shamshabad Real Estate Team',
     image: 'https://images.pexels.com/photos/7578899/pexels-photo-7578899.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     readTime: '5 min read',
     content: [
@@ -103,7 +103,7 @@ export const blogPosts: BlogPost[] = [
       'Apartments offer convenience, but land appreciation follows a different curve. Here\'s a data-backed look at why plotted investments tend to win long-term.',
     category: 'Investment Tips',
     date: '2026-04-15',
-    author: 'Shamshabad Properties Team',
+    author: 'Shamshabad Real Estate Team',
     image: 'https://images.pexels.com/photos/4525178/pexels-photo-4525178.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     readTime: '5 min read',
     content: [

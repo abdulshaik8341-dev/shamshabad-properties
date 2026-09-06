@@ -56,7 +56,7 @@ export default function Navbar() {
               Shamshabad
             </span>
             <span className="text-[10px] uppercase leading-none tracking-[0.3em] text-gold">
-              Properties
+              Real Estate
             </span>
           </div>
         </Link>

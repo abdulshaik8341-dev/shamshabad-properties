@@ -72,7 +72,7 @@ export default function About() {
             </h1>
             <div className="gold-divider mt-5" />
             <p className="mt-6 text-lg text-ivory/80 max-w-2xl leading-relaxed">
-              For over 15 years, Shamshabad Properties has helped families and
+              For over 15 years, Shamshabad Real Estate has helped families and
               investors find the right plot in the right location — with clear
               titles, complete infrastructure and honest guidance.
             </p>
@@ -99,7 +99,7 @@ export default function About() {
                 </h2>
                 <div className="gold-divider mt-5" />
                 <p className="mt-5 text-ink-mid leading-relaxed">
-                  Shamshabad Properties began in 2010 with a single DTCP-approved
+                  Shamshabad Real Estate began in 2010 with a single DTCP-approved
                   layout in Maheshwaram and a simple belief: that buying land
                   should be transparent, stress-free and built on trust.
                 </p>

@@ -18,7 +18,7 @@ export default function Footer() {
                   Shamshabad
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.3em] text-gold">
-                  Properties
+                  Real Estate
                 </span>
               </div>
             </div>
@@ -153,7 +153,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-emerald-mid/30 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-ivory/50">
-            © {new Date().getFullYear()} Shamshabad Properties. All rights reserved.
+            © {new Date().getFullYear()} Shamshabad Real Estate. All rights reserved.
           </p>
           <p className="text-xs text-ivory/50">
             HMDA & DTCP Approved Plotted Developments · RERA Registered

@@ -97,7 +97,7 @@ const locationHighlights = [
 const testimonials = [
   {
     quote:
-      'I bought a plot in Moghul Gardens in 2021 and the value has nearly doubled. The Shamshabad Properties team handled everything — legal checks, registration, the lot. Truly professional.',
+      'I bought a plot in Moghul Gardens in 2021 and the value has nearly doubled. The Shamshabad Real Estate team handled everything — legal checks, registration, the lot. Truly professional.',
     name: 'Ramesh K.',
     role: 'Investor, Moghul Gardens',
   },
@@ -254,7 +254,7 @@ export default function Home() {
                 <div className="gold-divider mt-5" />
                 <p className="mt-5 text-ink-mid leading-relaxed">
                   Looking to buy or sell a plot in Shamshabad? Shamshabad
-                  Properties is your trusted real estate partner, helping
+                  Real Estate is your trusted real estate partner, helping
                   buyers and sellers connect with the right opportunities
                   across Shamshabad, Tukkuguda, Maheshwaram, Mansanpally,
                   Kandukur and nearby developing areas.
@@ -370,7 +370,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Testimonials"
             title="What Our Buyers Say"
-            subtitle="Real stories from families and investors who chose Shamshabad Properties."
+            subtitle="Real stories from families and investors who chose Shamshabad Real Estate."
           />
           <div className="mt-14 grid md:grid-cols-3 gap-7">
             {testimonials.map((t, i) => (
