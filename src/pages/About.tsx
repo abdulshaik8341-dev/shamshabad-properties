@@ -91,19 +91,13 @@ export default function About() {
                 </h2>
                 <div className="gold-divider mt-5" />
                 <p className="mt-5 text-ink-mid leading-relaxed">
-                  Looking to buy or sell a plot in South Hyderabad? Maheshwaram Properties is your trusted Real Estate partner, helping buyers and sellers connect with the right opportunities across Maheshwaram, Tukkuguda, Mansanpally, Nagaram, Srisailam Highway and nearby developing areas.
+                  Looking to buy or sell a plot in South Hyderabad? Shamshabad Real estate is your trusted Real Estate partner, helping buyers and sellers connect with the right opportunities across Shamshabad and Airport Road, Ootpally, Narkhuda , Gandiguda, Rallaguda, Mamidipally, & bangalore Highway and nearby developing areas.
                 </p>
                 <p className="mt-4 text-ink-mid leading-relaxed">
-                  Over 15 years, we have grown to 11 active ventures across the
-                  Shamshabad corridor — from Tukkuguda to Kandukur to Muchintal.
-                  What hasn't changed is our commitment: every plot we sell
-                  carries clear titles, real infrastructure and a genuine
-                  growth story behind it.
+                  We specialize in buying and selling residential plots, HMDA & DTCP approved layouts, open plots, resale plots and investment properties. Whether you're a first-time buyer or an experienced investor, our team is committed to helping you find the right property at the right price.
                 </p>
                 <p className="mt-4 text-ink-mid leading-relaxed">
-                  If you own a plot and are planning to sell, we help you get
-                  the best possible market price through our local expertise and
-                  extensive network of genuine buyers.
+                  If you own a plot and are planning to sell, we help you get the best possible market price through our local market expertise and extensive network of genuine buyers.
                 </p>
               </div>
             </ScrollReveal>
