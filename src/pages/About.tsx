@@ -91,9 +91,7 @@ export default function About() {
                 </h2>
                 <div className="gold-divider mt-5" />
                 <p className="mt-5 text-ink-mid leading-relaxed">
-                  Shamshabad Real Estate began in 2010 with a single DTCP-approved
-                  layout in Maheshwaram and a simple belief: that buying land
-                  should be transparent, stress-free and built on trust.
+                  Looking to buy or sell a plot in South Hyderabad? Maheshwaram Properties is your trusted Real Estate partner, helping buyers and sellers connect with the right opportunities across Maheshwaram, Tukkuguda, Mansanpally, Nagaram, Srisailam Highway and nearby developing areas.
                 </p>
                 <p className="mt-4 text-ink-mid leading-relaxed">
                   Over 15 years, we have grown to 11 active ventures across the
