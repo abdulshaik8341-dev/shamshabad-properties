@@ -37,14 +37,6 @@ const values = [
   },
 ];
 
-const milestones = [
-  { year: '2010', text: 'Founded with a single venture in Maheshwaram' },
-  { year: '2014', text: 'Expanded to 4 ventures across Shamshabad belt' },
-  { year: '2018', text: 'Crossed 500+ plots delivered with zero legal disputes' },
-  { year: '2022', text: 'Launched our first HMDA premium venture — Grand Ville' },
-  { year: '2026', text: '11 active ventures across the Shamshabad corridor' },
-];
-
 const teamFeatures = [
   { icon: Users, title: 'Experienced Team', desc: 'Field experts who know every lane of the Shamshabad corridor.' },
   { icon: Award, title: 'RERA Compliant', desc: 'All ventures follow RERA norms with registered project numbers.' },
@@ -187,39 +179,8 @@ export default function About() {
         </div>
       </section>
 
-      {/* Journey timeline */}
-      <section className="py-20 lg:py-28 bg-cream">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Our Journey"
-            title="15 Years of Growth"
-          />
-          <div className="mt-14 relative">
-            <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-0.5 bg-gold/30 -translate-x-1/2" />
-            <div className="space-y-8">
-              {milestones.map((m, i) => (
-                <ScrollReveal key={m.year} delay={i * 80}>
-                  <div className={`relative flex items-center gap-6 ${i % 2 === 0 ? 'sm:flex-row-reverse sm:text-right' : ''}`}>
-                    <div className="flex-1 hidden sm:block" />
-                    <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 z-10">
-                      <div className="h-4 w-4 rounded-full bg-gold ring-4 ring-cream" />
-                    </div>
-                    <div className="flex-1 pl-12 sm:pl-0">
-                      <div className="rounded-2xl bg-white p-5 shadow-md ring-1 ring-emerald/5">
-                        <span className="font-serif text-2xl font-bold text-gold">{m.year}</span>
-                        <p className="mt-1 text-sm text-ink-mid">{m.text}</p>
-                      </div>
-                    </div>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Team features */}
-      <section className="py-20 lg:py-28">
+      <section className="py-20 lg:py-28 bg-cream">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6">
             {teamFeatures.map((f, i) => (
