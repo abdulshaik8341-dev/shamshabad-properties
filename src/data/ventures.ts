@@ -101,7 +101,7 @@ export const ventures: Venture[] = [
     totalPlots: '150 Plots',
     plotSizes: '167 - 400 sq. yds',
     status: 'Open for Booking',
-    image: 'https://images.pexels.com/photos/7350889/pexels-photo-7350889.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/grand-ville-thumbnail.webp',
     gallery: [
       'https://images.pexels.com/photos/4508161/pexels-photo-4508161.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
       'https://images.pexels.com/photos/9936969/pexels-photo-9936969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
