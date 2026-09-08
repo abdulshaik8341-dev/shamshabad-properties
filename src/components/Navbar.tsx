@@ -220,9 +220,7 @@ export default function Navbar() {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen((v) => !v)}
-          className={`lg:hidden p-2 transition-colors ${
-            'text-emerald'
-          }`}
+          className={`lg:hidden p-2 transition-colors text-emerald`}
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -231,11 +229,11 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          mobileOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+        className={`lg:hidden transition-all duration-300 overflow-y-auto overscroll-contain ${
+          mobileOpen ? 'max-h-[85vh] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="mx-4 mt-2 rounded-2xl bg-ivory shadow-2xl ring-1 ring-emerald/10 p-4">
+        <div className="mx-4 mt-2 mb-6 rounded-2xl bg-ivory shadow-2xl ring-1 ring-emerald/10 p-4">
           <Link
             to="/"
             className="block px-4 py-3 text-sm font-medium text-ink rounded-lg hover:bg-cream"
@@ -267,8 +265,10 @@ export default function Navbar() {
               →
             </span>
           </button>
+          
+          {/* Scrollable Ventures Dropdown List */}
           {mobileVenturesOpen && (
-            <div className="ml-4 border-l border-cream pl-3">
+            <div className="ml-4 border-l border-cream pl-3 max-h-[240px] overflow-y-auto overscroll-contain">
               <Link
                 to="/ventures"
                 className="block px-4 py-2.5 text-sm font-semibold text-emerald rounded-lg hover:bg-cream"
@@ -286,6 +286,7 @@ export default function Navbar() {
               ))}
             </div>
           )}
+          
           <Link
             to="/blog"
             className="block px-4 py-3 text-sm font-medium text-ink rounded-lg hover:bg-cream"
@@ -298,6 +299,7 @@ export default function Navbar() {
           >
             Contact Us
           </Link>
+          
           {/* Mobile search */}
           <div className="flex items-center gap-2 px-4 py-2 mt-1 rounded-lg bg-cream">
             <Search className="h-4 w-4 text-gold shrink-0" />
@@ -310,7 +312,7 @@ export default function Navbar() {
             />
           </div>
           {searchQuery.trim() && (
-            <div className="ml-4 border-l border-cream pl-3 max-h-[260px] overflow-y-auto">
+            <div className="ml-4 border-l border-cream pl-3 max-h-[200px] overflow-y-auto overscroll-contain">
               {searchResults.length === 0 ? (
                 <div className="px-4 py-2.5 text-sm text-ink-light">
                   No ventures found
@@ -328,9 +330,10 @@ export default function Navbar() {
               )}
             </div>
           )}
+          
           <Link
             to="/contact"
-            className="mt-2 block rounded-full border border-gold/50 bg-gold/15 px-4 py-3 text-center text-sm font-semibold uppercase tracking-wider text-emerald backdrop-blur-md transition-all duration-300 hover:border-gold/80 hover:bg-gold/30"
+            className="mt-4 block rounded-full border border-gold/50 bg-gold/15 px-4 py-3 text-center text-sm font-semibold uppercase tracking-wider text-emerald backdrop-blur-md transition-all duration-300 hover:border-gold/80 hover:bg-gold/30"
           >
             Enquire Now
           </Link>
