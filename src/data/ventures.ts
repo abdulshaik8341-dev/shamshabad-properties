@@ -29,8 +29,8 @@ export const ventures: Venture[] = [
     image: 'https://i.ibb.co/VcJvjkFc/mughal-garden.webp',
     gallery: [
       'https://i.ibb.co/VcJvjkFc/mughal-garden.webp',
-      'https://images.pexels.com/photos/16917117/pexels-photo-16917117.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/14794080/pexels-photo-14794080.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://i.ibb.co/xc4X079/mughal-garden-img-2.webp',
+      'https://images.pexels.com/photos/16917117/pexels-photo-16917117.jpeg?auto=compress&cs=tinysrgb&h=650&w=94',
     ],
     tagline: 'A Mughal-inspired gated enclave of grand proportions',
     about: [
