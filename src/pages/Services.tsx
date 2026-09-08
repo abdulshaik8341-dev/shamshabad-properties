@@ -127,18 +127,21 @@ const supportServices = [
     title: 'Resale & Resettlement',
     description:
       'Looking to sell your existing plot or buy a resale property in the Shamshabad belt? Our team handles end-to-end resale transactions with fair valuation and quick closures.',
+    image: '/service-resale.jpg',
   },
   {
     icon: Globe,
     title: 'NRI Investment Support',
     description:
       'Special end-to-end support for NRI investors including virtual site tours, power of attorney assistance, FEMA compliance, and seamless remote documentation for international clients.',
+    image: '/service-nri.jpg',
   },
   {
     icon: LifeBuoy,
     title: 'Post-Sale Support',
     description:
       "Our relationship doesn't end at registration. We offer ongoing support for plot development, utility connections, layout plan approvals, and any future queries you may have.",
+    image: '/service-post-sale.jpg',
   },
 ];
 
