@@ -183,11 +183,10 @@ export const ventures: Venture[] = [
     totalPlots: '100 Plots',
     plotSizes: '150 - 250 sq. yds',
     status: 'Open for Booking',
-    image: 'https://images.pexels.com/photos/14173845/pexels-photo-14173845.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/ne-fly-city-thumbnail.jpg',
     gallery: [
-      'https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/7294672/pexels-photo-7294672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/10628374/pexels-photo-10628374.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/ne-fly-city-thumbnail.jpg',
+      '/ne-fly-city-gallery-1.jpg',
     ],
     tagline: 'A fly-and-live concept minutes from the airport',
     about: [
