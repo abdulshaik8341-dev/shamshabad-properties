@@ -103,9 +103,9 @@ export const ventures: Venture[] = [
     status: 'Open for Booking',
     image: '/grand-ville-thumbnail.webp',
     gallery: [
-      'https://images.pexels.com/photos/4508161/pexels-photo-4508161.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/9936969/pexels-photo-9936969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/12485724/pexels-photo-12485724.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/grand-ville-thumbnail.webp',
+      '/grand-ville-gallery-1.webp',
+      '/grand-ville-gallery-2.webp',
     ],
     tagline: 'Grand-scale living in the heart of the Shamshabad corridor',
     about: [
