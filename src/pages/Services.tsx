@@ -99,27 +99,27 @@ const supportServices = [
     title: 'Free Site Visits',
     description:
       'We will guide you to site visits to all our venture locations. Experience the infrastructure, surroundings and neighbourhood before making your investment decision.',
-    image: '/service-site-visits.jpg',
   },
   {
     icon: TrendingUp,
     title: 'Investment Advisory',
     description:
       'Our seasoned advisors analyse market trends, micro-market data, and growth corridors to guide you toward the best investment. We help you maximise ROI on your land purchase.',
-    image: '/service-registration.jpg',
+    image: '/service-investment.jpg',
   },
   {
     icon: ScrollText,
     title: 'Property Registration',
     description:
       'We handle the entire Sub-Registrar office process including appointment scheduling, document preparation, stamp duty calculation and post-registration formalities — completely hassle-free.',
-    image: '/service-stamp-papers.jpg',
+    image: '/service-registration.jpg',
   },
   {
     icon: Landmark,
     title: 'Home Loan Assistance',
     description:
       'We have partnerships with leading banks and NBFCs to provide our clients with competitive home loan and plot loan options. Get pre-approved quickly with our dedicated finance desk.',
+    image: '/service-home-loan.jpg',
   },
   {
     icon: Repeat,
