@@ -71,11 +71,10 @@ export const ventures: Venture[] = [
     plotSizes: '133 - 267 sq. yds',
     priceRange: 'Rs. 15,000 - 22,000 / sq. yd',
     status: 'Selling Fast',
-    image: 'https://images.pexels.com/photos/11201060/pexels-photo-11201060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: 'https://i.ibb.co/JFKcjdWv/amity-park-img.jpg',
     gallery: [
-      'https://images.pexels.com/photos/7937291/pexels-photo-7937291.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/11597090/pexels-photo-11597090.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/19336565/pexels-photo-19336565.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://i.ibb.co/JFKcjdWv/amity-park-img.jpg',
+      'https://i.ibb.co/kg3C206R/amity-park-2.jpg',
     ],
     tagline: 'A friendly neighbourhood built around green open spaces',
     about: [
