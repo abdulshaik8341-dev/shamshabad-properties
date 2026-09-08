@@ -65,7 +65,7 @@ export const ventures: Venture[] = [
   {
     slug: 'amity-park',
     name: 'Amity Park',
-    location: 'Tukkuguda, Shamshabad',
+    location: 'Cherlaguda, Shamshabad',
     approval: 'DTCP Approved',
     totalPlots: '85 Plots',
     plotSizes: '133 - 267 sq. yds',
@@ -78,13 +78,12 @@ export const ventures: Venture[] = [
     ],
     tagline: 'A friendly neighbourhood built around green open spaces',
     about: [
-      'Amity Park is a DTCP-approved residential layout in Tukkuguda, conceived as a friendly, family-oriented neighbourhood where over 40% of the area is dedicated to parks, walkways and green open space. The layout favours community living with central parks visible from every cluster.',
+      'Amity Park is a DTCP-approved residential layout in Cherlaguda, conceived as a friendly, family-oriented neighbourhood where over 40% of the area is dedicated to parks, walkways and green open space. The layout favours community living with central parks visible from every cluster.',
       'Positioned just off the Srisailam Highway, Amity Park offers quick connectivity to the airport, the ORR and the expanding employment belt of South Hyderabad, making it an ideal choice for end-users and investors alike.',
     ],
     highlights: [
       '40% open space dedicated to parks',
       'Affordable entry point for first-time buyers',
-      'Central park visible from every street',
       'Proximity to Srisailam Highway',
     ],
     amenities: [
@@ -92,12 +91,8 @@ export const ventures: Venture[] = [
       'DTCP-approved layout with clear titles',
       'Black-top roads with footpaths',
       'Overhead water tank & underground drainage',
-      'Designer entrance gate with security',
-      'Children\'s play zone',
       'Street lighting',
-      'Underground cabling for utilities',
       'Rainwater harvesting',
-      'Avenue plantation on every street',
     ],
     locationAdvantages: [
       '10 min to RGIA Airport',
