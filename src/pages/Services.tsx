@@ -42,8 +42,7 @@ const mainServices = [
     title: 'Open Residential Plots',
     description:
       'HMDA & DTCP-approved residential plot layouts in prime locations with complete infrastructure and amenities.',
-    image:
-      'https://www.yahaproperties.in/assets/service-plots-B0gcHaQw.jpg',
+    image: '/main-service-plots.jpg',
   },
   {
     icon: Building2,
