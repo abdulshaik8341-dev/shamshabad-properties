@@ -120,12 +120,10 @@ export const ventures: Venture[] = [
     ],
     amenities: [
       'Clubhouse with multipurpose hall',
-      'Swimming pool & gymnasium',
       'Grand entrance gateway',
       '40-ft wide black-top roads',
       'Underground drainage & water lines',
       'Central landscaped park',
-      'Jogging track around the park',
     ],
     locationAdvantages: [
       '12 min to RGIA Airport',
@@ -208,7 +206,6 @@ export const ventures: Venture[] = [
       'Black-top roads with avenue planting',
       'Underground drainage & water supply',
       'Clubhouse with lounge',
-      'Jogging track',
       'Rainwater harvesting',
     ],
     locationAdvantages: [
