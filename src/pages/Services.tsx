@@ -85,30 +85,35 @@ const supportServices = [
     title: 'Residential Plot Sales',
     description:
       'Access a wide range of DTCP & HMDA approved residential plots across Shamshabad and Maheshwaram. We offer transparent pricing and complete documentation support for every plot we sell.',
+    image: '/service-plot-sales.jpg',
   },
   {
     icon: FileCheck,
     title: 'Legal Documentation',
     description:
       'Our expert legal team assists with title verification, sale deed preparation, encumbrance certificate checks, link document review and all statutory registrations — ensuring a 100% risk-free purchase.',
+    image: '/service-legal-docs.jpg',
   },
   {
     icon: MapPinned,
     title: 'Free Site Visits',
     description:
       'We will guide you to site visits to all our venture locations. Experience the infrastructure, surroundings and neighbourhood before making your investment decision.',
+    image: '/service-site-visits.jpg',
   },
   {
     icon: TrendingUp,
     title: 'Investment Advisory',
     description:
       'Our seasoned advisors analyse market trends, micro-market data, and growth corridors to guide you toward the best investment. We help you maximise ROI on your land purchase.',
+    image: '/service-registration.jpg',
   },
   {
     icon: ScrollText,
     title: 'Property Registration',
     description:
       'We handle the entire Sub-Registrar office process including appointment scheduling, document preparation, stamp duty calculation and post-registration formalities — completely hassle-free.',
+    image: '/service-stamp-papers.jpg',
   },
   {
     icon: Landmark,
@@ -287,16 +292,28 @@ export default function Services() {
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {supportServices.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 80}>
-                <div className="group h-full rounded-2xl bg-white p-7 shadow-lg ring-1 ring-emerald/5 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
-                    <s.icon className="h-7 w-7" />
+                <div className="group h-full overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-emerald/5 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+                  {'image' in s && s.image && (
+                    <div className="h-48 overflow-hidden">
+                      <img
+                        src={s.image}
+                        alt={s.title}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
+                  )}
+                  <div className="p-7">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
+                      <s.icon className="h-7 w-7" />
+                    </div>
+                    <h3 className="mt-5 font-serif text-xl font-bold text-emerald">
+                      {s.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-ink-mid">
+                      {s.description}
+                    </p>
                   </div>
-                  <h3 className="mt-5 font-serif text-xl font-bold text-emerald">
-                    {s.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-ink-mid">
-                    {s.description}
-                  </p>
                 </div>
               </ScrollReveal>
             ))}
