@@ -222,11 +222,10 @@ export const ventures: Venture[] = [
     totalPlots: '75 Plots',
     plotSizes: '133 - 240 sq. yds',
     status: 'Selling Fast',
-    image: 'https://images.pexels.com/photos/8708458/pexels-photo-8708458.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/madhupala-thumbnail.jpg',
     gallery: [
-      'https://images.pexels.com/photos/34993434/pexels-photo-34993434.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/14316939/pexels-photo-14316939.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/18731623/pexels-photo-18731623.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/madhupala-thumbnail.jpg',
+      '/madhupala-gallery-1.jpg',
     ],
     tagline: 'A honeyed woodland retreat at the edge of the city',
     about: [
