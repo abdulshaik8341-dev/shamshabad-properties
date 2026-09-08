@@ -28,7 +28,7 @@ export const ventures: Venture[] = [
     status: 'Open for Booking',
     image: 'https://i.ibb.co/VcJvjkFc/mughal-garden.webp',
     gallery: [
-      'https://images.pexels.com/photos/2516858/pexels-photo-2516858.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://i.ibb.co/VcJvjkFc/mughal-garden.webp',
       'https://images.pexels.com/photos/16917117/pexels-photo-16917117.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
       'https://images.pexels.com/photos/14794080/pexels-photo-14794080.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     ],
