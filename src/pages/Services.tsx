@@ -307,10 +307,10 @@ export default function Services() {
                     </div>
                   )}
                   <div className="p-7">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
+                    <div className="hidden sm:flex h-14 w-14 items-center justify-center rounded-xl bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
                       <s.icon className="h-7 w-7" />
                     </div>
-                    <h3 className="mt-5 font-serif text-xl font-bold text-emerald">
+                    <h3 className="sm:mt-5 font-serif text-xl font-bold text-emerald">
                       {s.title}
                     </h3>
                     <p className="mt-3 text-sm leading-relaxed text-ink-mid">
