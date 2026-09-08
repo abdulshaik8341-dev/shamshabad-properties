@@ -26,7 +26,7 @@ export const ventures: Venture[] = [
     plotSizes: '150 - 300 sq. yds',
     priceRange: 'Rs. 18,000 - 25,000 / sq. yd',
     status: 'Open for Booking',
-    image: '[url=https://ibb.co/Xrjz2Gnr][img]https://i.ibb.co/VcJvjkFc/mughal-garden.webp[/img][/url]',
+    image: 'https://ibb.co/Xrjz2Gnr][img]https://i.ibb.co/VcJvjkFc/mughal-garden.webp',
     gallery: [
       'https://images.pexels.com/photos/2516858/pexels-photo-2516858.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
       'https://images.pexels.com/photos/16917117/pexels-photo-16917117.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
