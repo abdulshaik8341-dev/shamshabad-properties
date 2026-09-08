@@ -1,5 +1,5 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
   MapPin,
   BadgeCheck,
@@ -21,6 +21,25 @@ export default function VentureDetail() {
   const { slug } = useParams<{ slug: string }>();
   const venture = slug ? getVentureBySlug(slug) : undefined;
   const [activeImage, setActiveImage] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  const nextImage = useCallback(() => {
+    if (venture) {
+      setActiveImage((prev) => (prev + 1) % venture.gallery.length);
+    }
+  }, [venture]);
+
+  // Auto-slideshow: cycle every 3 seconds
+  useEffect(() => {
+    if (!venture || venture.gallery.length <= 1 || isPaused) return;
+    const timer = setInterval(nextImage, 3000);
+    return () => clearInterval(timer);
+  }, [venture, isPaused, nextImage]);
+
+  // Reset active image when venture changes
+  useEffect(() => {
+    setActiveImage(0);
+  }, [slug]);
 
   if (!venture) {
     return <Navigate to="/ventures" replace />;
@@ -141,13 +160,52 @@ export default function VentureDetail() {
             </ScrollReveal>
 
             <ScrollReveal delay={150}>
-              <div>
-                <div className="rounded-2xl overflow-hidden shadow-xl mb-4">
+              <div
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+              >
+                <div className="relative rounded-2xl overflow-hidden shadow-xl mb-4 group">
                   <img
                     src={venture.gallery[activeImage]}
                     alt={`${venture.name} view ${activeImage + 1}`}
-                    className="w-full h-80 object-cover transition-all duration-500"
+                    className="w-full h-80 object-cover transition-all duration-700 ease-in-out"
                   />
+                  {/* Prev / Next arrows */}
+                  {venture.gallery.length > 1 && (
+                    <>
+                      <button
+                        onClick={() => setActiveImage((prev) => (prev - 1 + venture.gallery.length) % venture.gallery.length)}
+                        className="absolute left-3 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-black/40 text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/60"
+                        aria-label="Previous image"
+                      >
+                        <ArrowLeft className="h-5 w-5" />
+                      </button>
+                      <button
+                        onClick={() => setActiveImage((prev) => (prev + 1) % venture.gallery.length)}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-black/40 text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/60"
+                        aria-label="Next image"
+                      >
+                        <ArrowRight className="h-5 w-5" />
+                      </button>
+                    </>
+                  )}
+                  {/* Dot indicators */}
+                  {venture.gallery.length > 1 && (
+                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+                      {venture.gallery.map((_, i) => (
+                        <button
+                          key={i}
+                          onClick={() => setActiveImage(i)}
+                          className={`h-2.5 rounded-full transition-all duration-300 ${
+                            activeImage === i
+                              ? 'w-7 bg-gold'
+                              : 'w-2.5 bg-white/60 hover:bg-white'
+                          }`}
+                          aria-label={`Go to image ${i + 1}`}
+                        />
+                      ))}
+                    </div>
+                  )}
                 </div>
                 <div className="grid grid-cols-3 gap-3">
                   {venture.gallery.map((img, i) => (
