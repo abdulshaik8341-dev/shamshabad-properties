@@ -5,7 +5,6 @@ export interface Venture {
   approval: string;
   totalPlots: string;
   plotSizes: string;
-  priceRange: string;
   status: string;
   image: string;
   gallery: string[];
@@ -24,7 +23,6 @@ export const ventures: Venture[] = [
     approval: 'HMDA Approved',
     totalPlots: '120 Plots',
     plotSizes: '150 - 300 sq. yds',
-    priceRange: 'Rs. 18,000 - 25,000 / sq. yd',
     status: 'Open for Booking',
     image: 'https://i.ibb.co/VcJvjkFc/mughal-garden.webp',
     gallery: [
@@ -69,7 +67,6 @@ export const ventures: Venture[] = [
     approval: 'DTCP Approved',
     totalPlots: '85 Plots',
     plotSizes: '133 - 267 sq. yds',
-    priceRange: 'Rs. 15,000 - 22,000 / sq. yd',
     status: 'Selling Fast',
     image: 'https://i.ibb.co/JFKcjdWv/amity-park-img.jpg',
     gallery: [
@@ -108,7 +105,6 @@ export const ventures: Venture[] = [
     approval: 'HMDA Approved',
     totalPlots: '150 Plots',
     plotSizes: '167 - 400 sq. yds',
-    priceRange: 'Rs. 20,000 - 28,000 / sq. yd',
     status: 'Open for Booking',
     image: 'https://images.pexels.com/photos/7350889/pexels-photo-7350889.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     gallery: [
@@ -153,7 +149,6 @@ export const ventures: Venture[] = [
     approval: 'DTCP Approved',
     totalPlots: '200 Plots',
     plotSizes: '120 - 300 sq. yds',
-    priceRange: 'Rs. 12,000 - 18,000 / sq. yd',
     status: 'New Launch',
     image: 'https://images.pexels.com/photos/8431504/pexels-photo-8431504.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     gallery: [
@@ -198,7 +193,6 @@ export const ventures: Venture[] = [
     approval: 'HMDA Approved',
     totalPlots: '100 Plots',
     plotSizes: '150 - 250 sq. yds',
-    priceRange: 'Rs. 22,000 - 30,000 / sq. yd',
     status: 'Open for Booking',
     image: 'https://images.pexels.com/photos/14173845/pexels-photo-14173845.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     gallery: [
@@ -243,7 +237,6 @@ export const ventures: Venture[] = [
     approval: 'DTCP Approved',
     totalPlots: '75 Plots',
     plotSizes: '133 - 240 sq. yds',
-    priceRange: 'Rs. 16,000 - 24,000 / sq. yd',
     status: 'Selling Fast',
     image: 'https://images.pexels.com/photos/8708458/pexels-photo-8708458.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     gallery: [
@@ -288,7 +281,6 @@ export const ventures: Venture[] = [
     approval: 'DTCP Approved',
     totalPlots: '180 Plots',
     plotSizes: '120 - 267 sq. yds',
-    priceRange: 'Rs. 13,000 - 19,000 / sq. yd',
     status: 'Open for Booking',
     image: 'https://images.pexels.com/photos/36422828/pexels-photo-36422828.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     gallery: [
@@ -333,7 +325,6 @@ export const ventures: Venture[] = [
     approval: 'DTCP Approved',
     totalPlots: '160 Plots',
     plotSizes: '133 - 300 sq. yds',
-    priceRange: 'Rs. 14,000 - 20,000 / sq. yd',
     status: 'New Launch',
     image: 'https://images.pexels.com/photos/12966707/pexels-photo-12966707.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     gallery: [
@@ -378,7 +369,6 @@ export const ventures: Venture[] = [
     approval: 'HMDA Approved',
     totalPlots: '220 Plots',
     plotSizes: '150 - 350 sq. yds',
-    priceRange: 'Rs. 17,000 - 25,000 / sq. yd',
     status: 'Open for Booking',
     image: 'https://images.pexels.com/photos/34823932/pexels-photo-34823932.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     gallery: [
@@ -423,7 +413,6 @@ export const ventures: Venture[] = [
     approval: 'DTCP Approved',
     totalPlots: '90 Plots',
     plotSizes: '150 - 300 sq. yds',
-    priceRange: 'Rs. 15,000 - 23,000 / sq. yd',
     status: 'Selling Fast',
     image: 'https://images.pexels.com/photos/7294674/pexels-photo-7294674.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     gallery: [
@@ -468,7 +457,6 @@ export const ventures: Venture[] = [
     approval: 'HMDA Approved',
     totalPlots: '110 Plots',
     plotSizes: '133 - 267 sq. yds',
-    priceRange: 'Rs. 19,000 - 27,000 / sq. yd',
     status: 'Open for Booking',
     image: 'https://images.pexels.com/photos/16753029/pexels-photo-16753029.png?auto=compress&cs=tinysrgb&h=650&w=940',
     gallery: [
