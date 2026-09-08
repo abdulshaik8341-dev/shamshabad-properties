@@ -99,6 +99,7 @@ const supportServices = [
     title: 'Free Site Visits',
     description:
       'We will guide you to site visits to all our venture locations. Experience the infrastructure, surroundings and neighbourhood before making your investment decision.',
+    image: '/service-free-visit.jpg',
   },
   {
     icon: TrendingUp,
