@@ -12,14 +12,12 @@ export default function Navbar() {
   const searchRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
-  // Close menus on route change
   useEffect(() => {
     setMobileOpen(false);
     setVenturesOpen(false);
     setSearchOpen(false);
   }, [location.pathname]);
 
-  // Handle click outside for desktop search
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
       if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
@@ -29,20 +27,6 @@ export default function Navbar() {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
-
-  // Prevent background scrolling when mobile menu is open
-  useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    
-    // Cleanup function in case component unmounts while menu is open
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [mobileOpen]);
 
   const searchResults = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
@@ -247,11 +231,11 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden transition-all duration-300 fixed inset-x-0 top-[60px] bottom-0 bg-ivory/95 backdrop-blur-md overflow-y-auto ${
-          mobileOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          mobileOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="mx-4 my-4 rounded-2xl bg-ivory shadow-2xl ring-1 ring-emerald/10 p-4">
+        <div className="mx-4 mt-2 rounded-2xl bg-ivory shadow-2xl ring-1 ring-emerald/10 p-4">
           <Link
             to="/"
             className="block px-4 py-3 text-sm font-medium text-ink rounded-lg hover:bg-cream"
