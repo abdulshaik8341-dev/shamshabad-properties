@@ -264,11 +264,9 @@ export const ventures: Venture[] = [
     totalPlots: '180 Plots',
     plotSizes: '120 - 267 sq. yds',
     status: 'Open for Booking',
-    image: 'https://images.pexels.com/photos/36422828/pexels-photo-36422828.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/rk-township-thumbnail.jpg',
     gallery: [
-      'https://images.pexels.com/photos/37860385/pexels-photo-37860385.png?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/7937765/pexels-photo-7937765.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/4525178/pexels-photo-4525178.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/rk-township-thumbnail.jpg',
     ],
     tagline: 'A value-driven township for smart investors',
     about: [
