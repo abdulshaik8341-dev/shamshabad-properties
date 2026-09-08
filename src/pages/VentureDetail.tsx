@@ -33,7 +33,6 @@ export default function VentureDetail() {
     { icon: BadgeCheck, label: 'Approval', value: venture.approval },
     { icon: Layers, label: 'Total Plots', value: venture.totalPlots },
     { icon: Ruler, label: 'Plot Sizes', value: venture.plotSizes },
-    { icon: Tag, label: 'Price Range', value: venture.priceRange },
     { icon: Building2, label: 'Status', value: venture.status },
   ];
 
