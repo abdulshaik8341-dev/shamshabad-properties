@@ -229,7 +229,7 @@ export default function Home() {
       </section>
 
       {/* About preview */}
-      <section className="py-20 lg:py-28">
+      <section className="pt-20 pb-10 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <ScrollReveal>
@@ -280,7 +280,7 @@ export default function Home() {
       </section>
 
       {/* Featured ventures */}
-      <section className="py-20 lg:py-28 bg-cream">
+      <section className="pt-12 pb-20 lg:py-28 bg-cream">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Our Portfolio"
