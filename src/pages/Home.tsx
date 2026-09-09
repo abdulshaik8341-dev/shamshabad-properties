@@ -59,21 +59,25 @@ const whyChoose = [
     icon: ShieldCheck,
     title: 'Clear Titles & Approvals',
     desc: 'Every venture carries HMDA or DTCP approval with clear, marketable titles — verified by our legal team before launch.',
+    image: '/why-choose-titles.jpg',
   },
   {
     icon: Trees,
     title: 'Green, Planned Layouts',
     desc: 'Avenue plantations, central parks and rainwater harvesting are standard in every venture — not add-ons.',
+    image: '/why-choose-layouts.jpg',
   },
   {
     icon: TrendingUp,
     title: 'High-Growth Locations',
-    desc: 'Our ventures sit on Shamshabad\'s fastest-appreciating micro-locations, near the airport and ORR.',
+    desc: "Our ventures sit on Shamshabad's fastest-appreciating micro-locations, near the airport and ORR.",
+    image: '/why-choose-locations.jpg',
   },
   {
     icon: Building2,
     title: 'Ready Infrastructure',
     desc: 'Black-top roads, underground drainage, water supply and street lighting are delivered before handover.',
+    image: '/why-choose-infrastructure.jpg',
   },
 ];
 
@@ -310,16 +314,33 @@ export default function Home() {
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyChoose.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 100}>
-                <div className="group h-full rounded-2xl bg-white p-7 shadow-lg ring-1 ring-emerald/5 transition-all duration-500 hover:shadow-xl hover:ring-gold/20 hover:-translate-y-1">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
-                    <item.icon className="h-7 w-7" />
+                <div className="group h-full rounded-2xl bg-white shadow-lg ring-1 ring-emerald/5 overflow-hidden transition-all duration-500 hover:shadow-xl hover:ring-gold/20 hover:-translate-y-1">
+                  {item.image && (
+                    <div className="relative h-48 w-full overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-emerald/90 via-transparent to-transparent opacity-80" />
+                      <div className="absolute bottom-4 left-4 flex h-10 w-10 items-center justify-center rounded-lg bg-gold text-emerald shadow-lg">
+                        <item.icon className="h-5 w-5" />
+                      </div>
+                    </div>
+                  )}
+                  <div className="p-7">
+                    {!item.image && (
+                      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
+                        <item.icon className="h-7 w-7" />
+                      </div>
+                    )}
+                    <h3 className={`font-serif text-xl font-bold text-emerald ${!item.image ? 'mt-5' : ''}`}>
+                      {item.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-ink-mid">
+                      {item.desc}
+                    </p>
                   </div>
-                  <h3 className="mt-5 font-serif text-xl font-bold text-emerald">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-ink-mid">
-                    {item.desc}
-                  </p>
                 </div>
               </ScrollReveal>
             ))}
