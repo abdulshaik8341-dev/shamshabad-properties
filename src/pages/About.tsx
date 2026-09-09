@@ -177,22 +177,22 @@ export default function About() {
       </section>
 
       {/* Target Audiences */}
-      <section className="py-20 lg:py-28 bg-[#0a111a]">
+      <section className="py-20 lg:py-28 bg-emerald">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-6">
             {targetAudiences.map((audience, i) => (
               <ScrollReveal key={audience.title} delay={i * 100}>
-                <div className="relative h-full rounded-2xl bg-[#111928] p-8 lg:p-10 border border-white/5 hover:border-gold/30 transition-colors">
-                  <div className="absolute top-8 right-8 font-mono text-lg text-white/10">
+                <div className="relative h-full rounded-2xl bg-white/5 p-8 lg:p-10 border border-white/10 hover:border-gold/30 transition-colors">
+                  <div className="absolute top-8 right-8 font-mono text-lg text-ivory/20">
                     {audience.num}
                   </div>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gold/50 text-gold mb-6">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gold/50 text-gold mb-6 bg-gold/10">
                     <audience.icon className="h-5 w-5" />
                   </div>
-                  <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-4">
+                  <h3 className="font-serif text-xl lg:text-2xl font-bold text-ivory mb-4">
                     {audience.title}
                   </h3>
-                  <p className="text-slate-400 leading-relaxed text-sm lg:text-base">
+                  <p className="text-ivory/70 leading-relaxed text-sm lg:text-base">
                     {audience.desc}
                   </p>
                 </div>
