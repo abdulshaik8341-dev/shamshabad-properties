@@ -10,9 +10,38 @@ import {
   Award,
   ArrowRight,
   CheckCircle2,
+  Home,
+  Globe,
 } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import ScrollReveal from '@/components/ScrollReveal';
+
+const targetAudiences = [
+  {
+    icon: Home,
+    title: 'Home Buyers',
+    num: '01',
+    desc: 'We help first-time homebuyers find affordable residential plots in Shamshabad, Tukkuguda, Maheshwaram, Mansanpally, Srisailam Highway and nearby locations. Our team ensures every property has clear legal documentation and supports you through a smooth buying process.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Real Estate Investors',
+    num: '02',
+    desc: 'We assist investors in discovering high-growth investment opportunities, including HMDA, DTCP and resale plots in some of South Hyderabad\'s fastest-developing areas. Our goal is to help you make informed investment decisions with confidence.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Property Owners & Sellers',
+    num: '03',
+    desc: 'Looking to sell your plot? We help property owners market their plots to genuine buyers and work to get the best possible market price through our local expertise and strong buyer network.',
+  },
+  {
+    icon: Globe,
+    title: 'NRI Property Buyers',
+    num: '04',
+    desc: 'We provide complete assistance to NRI clients looking to invest in Hyderabad Real Estate. From selecting the right plot to documentation and registration, we offer end-to-end support for a hassle-free experience.',
+  },
+];
 
 const values = [
   {
@@ -143,6 +172,32 @@ export default function About() {
                 </p>
               </div>
             </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audiences */}
+      <section className="py-20 lg:py-28 bg-[#0a111a]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-6">
+            {targetAudiences.map((audience, i) => (
+              <ScrollReveal key={audience.title} delay={i * 100}>
+                <div className="relative h-full rounded-2xl bg-[#111928] p-8 lg:p-10 border border-white/5 hover:border-gold/30 transition-colors">
+                  <div className="absolute top-8 right-8 font-mono text-lg text-white/10">
+                    {audience.num}
+                  </div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gold/50 text-gold mb-6">
+                    <audience.icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-4">
+                    {audience.title}
+                  </h3>
+                  <p className="text-slate-400 leading-relaxed text-sm lg:text-base">
+                    {audience.desc}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
           </div>
         </div>
       </section>
