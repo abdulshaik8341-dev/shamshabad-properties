@@ -17,13 +17,14 @@ import {
 import SectionHeading from '@/components/SectionHeading';
 import ScrollReveal from '@/components/ScrollReveal';
 import VentureCard from '@/components/VentureCard';
+import AnimatedNumber from '@/components/AnimatedNumber';
 import { ventures } from '@/data/ventures';
 
 const stats = [
-  { value: '11', label: 'Premium Ventures' },
-  { value: '1,390+', label: 'Plots Delivered' },
-  { value: '15+', label: 'Years Experience' },
-  { value: '500+', label: 'Happy Families' },
+  { value: 11, suffix: '', label: 'Premium Ventures' },
+  { value: 1390, suffix: '+', label: 'Plots Delivered' },
+  { value: 15, suffix: '+', label: 'Years Experience' },
+  { value: 500, suffix: '+', label: 'Happy Families' },
 ];
 
 const heroSlides = [
@@ -212,9 +213,7 @@ export default function Home() {
             {stats.map((s, i) => (
               <ScrollReveal key={s.label} delay={i * 100}>
                 <div className="text-center">
-                  <div className="font-serif text-4xl lg:text-5xl font-bold text-gold">
-                    {s.value}
-                  </div>
+                  <AnimatedNumber value={s.value} suffix={s.suffix} duration={2000} />
                   <div className="mt-1 text-xs uppercase tracking-[0.2em] text-ivory/60">
                     {s.label}
                   </div>
@@ -237,7 +236,7 @@ export default function Home() {
                   className="rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 hidden sm:block rounded-2xl bg-gold p-6 shadow-xl">
-                  <div className="font-serif text-3xl font-bold text-emerald">15+</div>
+                  <AnimatedNumber value={15} suffix="+" className="font-serif text-3xl font-bold text-emerald" duration={2000} />
                   <div className="text-xs uppercase tracking-wider text-emerald/80">
                     Years of Trust
                   </div>
