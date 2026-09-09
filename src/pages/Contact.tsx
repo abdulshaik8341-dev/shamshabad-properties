@@ -82,23 +82,24 @@ export default function Contact() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="relative py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-32 lg:py-40 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/8469935/pexels-photo-8469935.jpeg?auto=compress&cs=tinysrgb&h=800&w=1920"
+            src="https://images.pexels.com/photos/8469935/pexels-photo-8469935.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920"
             alt="Contact us"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald/95 to-emerald/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-footer via-emerald/95 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ivory via-transparent to-transparent opacity-90" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <p className="eyebrow text-gold-light mb-3">Contact Us</p>
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-ivory leading-tight max-w-3xl">
-              Let's Find Your Perfect Plot
+            <p className="eyebrow text-gold mb-4 tracking-[0.3em]">Get In Touch</p>
+            <h1 className="font-serif text-5xl lg:text-7xl font-bold text-ivory leading-tight max-w-3xl drop-shadow-sm">
+              Let's Find Your <span className="text-gold">Perfect Plot</span>
             </h1>
-            <div className="gold-divider mt-5" />
-            <p className="mt-6 text-lg text-ivory/80 max-w-2xl leading-relaxed">
+            <div className="gold-divider mt-8 mb-6" />
+            <p className="text-lg lg:text-xl text-ivory/90 max-w-2xl leading-relaxed font-light drop-shadow-md">
               Schedule a free site visit, request venture details, or talk to
               our team about your budget and goals. We respond within 24 hours.
             </p>
@@ -107,18 +108,18 @@ export default function Contact() {
       </section>
 
       {/* Contact info cards */}
-      <section className="py-16 -mt-10 relative z-10">
+      <section className="py-12 -mt-16 relative z-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {contactInfo.map((c, i) => (
               <ScrollReveal key={c.title} delay={i * 100}>
-                <div className="h-full rounded-2xl bg-white p-6 shadow-lg ring-1 ring-emerald/5 text-center transition-all hover:shadow-xl hover:-translate-y-1">
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald text-gold mb-4">
-                    <c.icon className="h-6 w-6" />
+                <div className="h-full rounded-2xl bg-footer border border-gold/10 p-8 shadow-2xl text-center transition-all duration-500 hover:border-gold/40 hover:shadow-gold/10 hover:-translate-y-2">
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gold/10 text-gold mb-6 ring-1 ring-gold/20">
+                    <c.icon className="h-7 w-7" />
                   </div>
-                  <h3 className="font-serif text-lg font-bold text-emerald">{c.title}</h3>
+                  <h3 className="font-serif text-xl font-bold text-ivory mb-2">{c.title}</h3>
                   {c.lines.map((line) => (
-                    <p key={line} className="mt-1 text-sm text-ink-mid">{line}</p>
+                    <p key={line} className="mt-1 text-sm text-ivory/60">{line}</p>
                   ))}
                 </div>
               </ScrollReveal>
@@ -128,85 +129,85 @@ export default function Contact() {
       </section>
 
       {/* Form + Map */}
-      <section className="py-16 lg:py-24">
+      <section className="py-20 lg:py-28 bg-ivory">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-start">
             {/* Form */}
             <ScrollReveal>
-              <div className="rounded-2xl bg-white p-8 lg:p-10 shadow-xl ring-1 ring-emerald/5">
-                <p className="eyebrow mb-3">Enquiry Form</p>
-                <h2 className="font-serif text-2xl lg:text-3xl font-bold text-emerald">
+              <div className="rounded-3xl bg-white p-8 lg:p-12 shadow-2xl shadow-emerald/5 ring-1 ring-emerald/5">
+                <p className="eyebrow mb-4 text-gold">Enquiry Form</p>
+                <h2 className="font-serif text-3xl lg:text-4xl font-bold text-emerald">
                   Send Us a Message
                 </h2>
-                <div className="gold-divider mt-4 mb-6" />
+                <div className="gold-divider mt-5 mb-8" />
 
                 {status === 'success' ? (
-                  <div className="text-center py-8">
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-light/20 text-emerald mb-4">
-                      <CheckCircle2 className="h-8 w-8" />
+                  <div className="text-center py-12">
+                    <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-emerald/5 text-emerald mb-6 ring-1 ring-emerald/20">
+                      <CheckCircle2 className="h-10 w-10" />
                     </div>
-                    <h3 className="font-serif text-xl font-bold text-emerald">
+                    <h3 className="font-serif text-2xl font-bold text-emerald">
                       Thank You!
                     </h3>
-                    <p className="mt-3 text-sm text-ink-mid">
-                      Your enquiry has been received. Our team will contact you
+                    <p className="mt-4 text-ink-mid leading-relaxed">
+                      Your enquiry has been received. Our luxury real estate consultants will contact you
                       within 24 hours.
                     </p>
                     <button
                       onClick={() => setStatus('idle')}
-                      className="mt-6 btn-outline"
+                      className="mt-8 btn-outline"
                     >
                       Send Another Enquiry
                     </button>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-5">
-                    <div className="grid sm:grid-cols-2 gap-5">
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="block text-sm font-medium text-emerald mb-1.5">
-                          Full Name *
+                        <label className="block text-sm font-semibold tracking-wide text-emerald mb-2">
+                          FULL NAME *
                         </label>
                         <input
                           type="text"
                           name="name"
                           required
-                          className="w-full rounded-lg border border-cream bg-ivory/50 px-4 py-3 text-sm text-ink outline-none transition-all focus:border-gold focus:ring-2 focus:ring-gold/20"
+                          className="w-full rounded-xl border-0 bg-cream/50 px-5 py-3.5 text-ink shadow-inner outline-none transition-all placeholder:text-ink/30 focus:bg-white focus:ring-2 focus:ring-gold"
                           placeholder="Your name"
                         />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-emerald mb-1.5">
-                          Phone Number *
+                        <label className="block text-sm font-semibold tracking-wide text-emerald mb-2">
+                          PHONE NUMBER *
                         </label>
                         <input
                           type="tel"
                           name="phone"
                           required
-                          className="w-full rounded-lg border border-cream bg-ivory/50 px-4 py-3 text-sm text-ink outline-none transition-all focus:border-gold focus:ring-2 focus:ring-gold/20"
+                          className="w-full rounded-xl border-0 bg-cream/50 px-5 py-3.5 text-ink shadow-inner outline-none transition-all placeholder:text-ink/30 focus:bg-white focus:ring-2 focus:ring-gold"
                           placeholder="+91 99082 24832"
                         />
                       </div>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-emerald mb-1.5">
-                        Email Address *
+                      <label className="block text-sm font-semibold tracking-wide text-emerald mb-2">
+                        EMAIL ADDRESS *
                       </label>
                       <input
                         type="email"
                         name="email"
                         required
-                        className="w-full rounded-lg border border-cream bg-ivory/50 px-4 py-3 text-sm text-ink outline-none transition-all focus:border-gold focus:ring-2 focus:ring-gold/20"
+                        className="w-full rounded-xl border-0 bg-cream/50 px-5 py-3.5 text-ink shadow-inner outline-none transition-all placeholder:text-ink/30 focus:bg-white focus:ring-2 focus:ring-gold"
                         placeholder="you@example.com"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-emerald mb-1.5">
-                        Interested In
+                      <label className="block text-sm font-semibold tracking-wide text-emerald mb-2">
+                        INTERESTED IN
                       </label>
                       <select
                         name="interest"
                         defaultValue=""
-                        className="w-full rounded-lg border border-cream bg-ivory/50 px-4 py-3 text-sm text-ink outline-none transition-all focus:border-gold focus:ring-2 focus:ring-gold/20"
+                        className="w-full rounded-xl border-0 bg-cream/50 px-5 py-3.5 text-ink shadow-inner outline-none transition-all focus:bg-white focus:ring-2 focus:ring-gold"
                       >
                         <option value="">Select a venture or service</option>
                         <option value="General Enquiry">General Enquiry</option>
@@ -220,20 +221,20 @@ export default function Contact() {
                       </select>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-emerald mb-1.5">
-                        Message
+                      <label className="block text-sm font-semibold tracking-wide text-emerald mb-2">
+                        MESSAGE
                       </label>
                       <textarea
                         name="message"
-                        rows={4}
-                        className="w-full rounded-lg border border-cream bg-ivory/50 px-4 py-3 text-sm text-ink outline-none transition-all focus:border-gold focus:ring-2 focus:ring-gold/20 resize-none"
+                        rows={5}
+                        className="w-full rounded-xl border-0 bg-cream/50 px-5 py-3.5 text-ink shadow-inner outline-none transition-all placeholder:text-ink/30 focus:bg-white focus:ring-2 focus:ring-gold resize-none"
                         placeholder="Tell us about your requirements, budget, timeline..."
                       />
                     </div>
 
                     {status === 'error' && (
-                      <div className="flex items-center gap-2 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">
-                        <AlertCircle className="h-4 w-4 shrink-0" />
+                      <div className="flex items-center gap-3 rounded-xl bg-red-50 px-5 py-4 text-sm text-red-700 border border-red-100">
+                        <AlertCircle className="h-5 w-5 shrink-0" />
                         {errorMsg}
                       </div>
                     )}
@@ -241,17 +242,17 @@ export default function Contact() {
                     <button
                       type="submit"
                       disabled={status === 'submitting'}
-                      className="w-full btn-primary disabled:opacity-60 disabled:cursor-not-allowed"
+                      className="w-full btn-primary py-4 text-sm tracking-widest disabled:opacity-60 disabled:cursor-not-allowed"
                     >
                       {status === 'submitting' ? (
                         <>
-                          <Loader2 className="h-4 w-4 animate-spin" />
-                          Sending...
+                          <Loader2 className="h-5 w-5 animate-spin" />
+                          SENDING...
                         </>
                       ) : (
                         <>
-                          <Send className="h-4 w-4" />
-                          Enquire Now
+                          <Send className="h-5 w-5" />
+                          ENQUIRE NOW
                         </>
                       )}
                     </button>
@@ -262,20 +263,24 @@ export default function Contact() {
 
             {/* Map + side info */}
             <ScrollReveal delay={150}>
-              <div className="flex flex-col gap-6 h-full">
-                <div className="rounded-2xl overflow-hidden shadow-xl flex-1 min-h-[300px]">
+              <div className="flex flex-col gap-8 h-full">
+                <div className="rounded-3xl overflow-hidden shadow-2xl flex-1 min-h-[350px] ring-1 ring-black/5 bg-cream relative">
+                  <div className="absolute inset-0 pointer-events-none rounded-3xl ring-1 ring-inset ring-black/10 z-10" />
                   <iframe
                     title="Shamshabad location map"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=78.32%2C17.20%2C78.48%2C17.30&layer=mapnik&marker=17.2517%2C78.3984"
-                    className="w-full h-full border-0 min-h-[300px]"
+                    className="w-full h-full border-0 min-h-[350px] filter grayscale contrast-125 opacity-90"
                     loading="lazy"
                   />
                 </div>
-                <div className="rounded-2xl bg-emerald p-8 text-ivory">
-                  <h3 className="font-serif text-xl font-bold text-gold-light mb-3">
+                <div className="rounded-3xl bg-footer p-10 shadow-2xl ring-1 ring-white/5 text-ivory relative overflow-hidden">
+                  <div className="absolute top-0 right-0 p-8 opacity-5">
+                    <MapPin className="w-32 h-32" />
+                  </div>
+                  <h3 className="font-serif text-2xl font-bold text-gold mb-6 relative z-10">
                     Why Reach Out to Us?
                   </h3>
-                  <ul className="space-y-3 text-sm text-ivory/80">
+                  <ul className="space-y-4 text-base text-ivory/80 relative z-10">
                     {[
                       'Free site visits to any venture',
                       'Complete legal verification at no cost',
@@ -283,8 +288,8 @@ export default function Contact() {
                       'NRI support with power of attorney',
                       'Resale and secondary market guidance',
                     ].map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-gold shrink-0 mt-0.5" />
+                      <li key={item} className="flex items-start gap-4">
+                        <CheckCircle2 className="h-6 w-6 text-gold shrink-0" />
                         {item}
                       </li>
                     ))}
