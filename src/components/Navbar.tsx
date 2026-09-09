@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Menu, X, MapPin, Search } from 'lucide-react';
+import { Menu, X, Search } from 'lucide-react';
 import { ventures } from '@/data/ventures';
 
 export default function Navbar() {
@@ -47,15 +47,17 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-ivory/95 py-2 shadow-md backdrop-blur-md"
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2.5 group">
-          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-emerald ring-2 ring-gold/40 transition-all group-hover:ring-gold">
-            <MapPin className="h-5 w-5 text-gold" strokeWidth={2.5} />
-          </div>
+        <Link to="/" className="flex items-center gap-3 group">
+          <img
+            src="/logo-emblem.png"
+            alt="Shamshabad Real Estate"
+            className="h-11 w-11 rounded-full object-cover bg-white ring-2 ring-gold/50 shadow-sm transition-all duration-300 group-hover:ring-gold group-hover:scale-105"
+          />
           <div className="flex flex-col leading-none">
             <span className="font-serif text-xl font-bold leading-none tracking-tight text-emerald">
               Shamshabad
             </span>
-            <span className="text-[10px] uppercase leading-none tracking-[0.3em] text-gold">
+            <span className="text-[10px] uppercase leading-none tracking-[0.3em] text-gold mt-1">
               Real Estate
             </span>
           </div>

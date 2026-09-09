@@ -9,15 +9,17 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-emerald ring-2 ring-gold/40">
-                <MapPin className="h-5 w-5 text-gold" strokeWidth={2.5} />
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="/logo-emblem.png"
+                alt="Shamshabad Real Estate"
+                className="h-12 w-12 rounded-full object-cover bg-white ring-2 ring-gold/50 shadow-md p-0.5"
+              />
               <div className="flex flex-col leading-none">
                 <span className="font-serif text-xl font-bold text-ivory">
                   Shamshabad
                 </span>
-                <span className="text-[10px] uppercase tracking-[0.3em] text-gold">
+                <span className="text-[10px] uppercase tracking-[0.3em] text-gold mt-1">
                   Real Estate
                 </span>
               </div>
