@@ -269,7 +269,7 @@ export default function Contact() {
                   <iframe
                     title="Shamshabad location map"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=78.32%2C17.20%2C78.48%2C17.30&layer=mapnik&marker=17.2517%2C78.3984"
-                    className="w-full h-full border-0 min-h-[350px] filter grayscale contrast-125 opacity-90"
+                    className="w-full h-full border-0 min-h-[350px] filter grayscale contrast-125 opacity-90 pointer-events-none"
                     loading="lazy"
                   />
                 </div>
