@@ -61,9 +61,7 @@ export default function Contact() {
       return;
     }
 
-    if (supabase) {
-      await supabase.from('contact_submissions').insert(data);
-    }
+    // Redirect to WhatsApp
 
     const whatsappMessage = [
       'Hello, I would like to enquire about Shamshabad Real Estate.',
@@ -76,6 +74,7 @@ export default function Contact() {
       .filter(Boolean)
       .join('\n');
 
+    setStatus('success');
     window.location.href = `https://wa.me/919908224832?text=${encodeURIComponent(whatsappMessage)}`;
   };
 
