@@ -163,69 +163,65 @@ export default function VentureDetail() {
               <div
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
+                className="flex flex-col gap-4"
               >
-                <div className="relative rounded-2xl overflow-hidden shadow-xl mb-4 group">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl group ring-1 ring-emerald/5 bg-cream">
                   <img
                     src={venture.gallery[activeImage]}
                     alt={`${venture.name} view ${activeImage + 1}`}
-                    className="w-full h-[400px] object-contain bg-white transition-all duration-700 ease-in-out"
+                    className={`w-full h-[400px] lg:h-[500px] transition-all duration-700 ease-in-out ${
+                      venture.gallery[activeImage].includes('amity-park-img') || venture.gallery[activeImage].includes('layout') || venture.gallery[activeImage].includes('plan')
+                        ? 'object-contain p-4 bg-white'
+                        : 'object-cover'
+                    }`}
                   />
-                  {/* Prev / Next arrows */}
+                  {/* Premium Next/Prev Arrows */}
                   {venture.gallery.length > 1 && (
                     <>
                       <button
                         onClick={() => setActiveImage((prev) => (prev - 1 + venture.gallery.length) % venture.gallery.length)}
-                        className="absolute left-3 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-black/40 text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/60"
+                        className="absolute left-4 top-1/2 -translate-y-1/2 flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-emerald shadow-lg opacity-0 group-hover:opacity-100 transition-all hover:bg-gold hover:text-white hover:scale-110"
                         aria-label="Previous image"
                       >
                         <ArrowLeft className="h-5 w-5" />
                       </button>
                       <button
                         onClick={() => setActiveImage((prev) => (prev + 1) % venture.gallery.length)}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-black/40 text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/60"
+                        className="absolute right-4 top-1/2 -translate-y-1/2 flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-emerald shadow-lg opacity-0 group-hover:opacity-100 transition-all hover:bg-gold hover:text-white hover:scale-110"
                         aria-label="Next image"
                       >
                         <ArrowRight className="h-5 w-5" />
                       </button>
                     </>
                   )}
-                  {/* Dot indicators */}
-                  {venture.gallery.length > 1 && (
-                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-                      {venture.gallery.map((_, i) => (
-                        <button
-                          key={i}
-                          onClick={() => setActiveImage(i)}
-                          className={`h-2.5 rounded-full transition-all duration-300 ${
-                            activeImage === i
-                              ? 'w-7 bg-gold'
-                              : 'w-2.5 bg-white/60 hover:bg-white'
+                </div>
+                
+                {/* Premium Thumbnails */}
+                {venture.gallery.length > 1 && (
+                  <div className="grid grid-cols-3 gap-4">
+                    {venture.gallery.map((img, i) => (
+                      <button
+                        key={i}
+                        onClick={() => setActiveImage(i)}
+                        className={`relative rounded-2xl overflow-hidden transition-all duration-300 ${
+                          activeImage === i
+                            ? 'ring-2 ring-gold ring-offset-2 scale-[1.02] shadow-lg'
+                            : 'ring-1 ring-emerald/10 hover:ring-gold/50 opacity-70 hover:opacity-100'
+                        }`}
+                      >
+                        <img
+                          src={img}
+                          alt={`${venture.name} thumbnail ${i + 1}`}
+                          className={`w-full h-24 lg:h-32 ${
+                            img.includes('amity-park-img') || img.includes('layout') || img.includes('plan')
+                              ? 'object-contain bg-white p-2'
+                              : 'object-cover'
                           }`}
-                          aria-label={`Go to image ${i + 1}`}
                         />
-                      ))}
-                    </div>
-                  )}
-                </div>
-                <div className="grid grid-cols-3 gap-3">
-                  {venture.gallery.map((img, i) => (
-                    <button
-                      key={i}
-                      onClick={() => setActiveImage(i)}
-                      className={`rounded-xl overflow-hidden ring-2 transition-all ${
-                        activeImage === i
-                          ? 'ring-gold'
-                          : 'ring-transparent hover:ring-gold/40'
-                      }`}
-                    >
-                      <img
-                        src={img}
-                        alt={`${venture.name} thumbnail ${i + 1}`}
-                        className="w-full h-24 object-cover"
-                      />
-                    </button>
-                  ))}
-                </div>
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
             </ScrollReveal>
           </div>
