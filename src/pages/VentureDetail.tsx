@@ -168,7 +168,7 @@ export default function VentureDetail() {
                   <img
                     src={venture.gallery[activeImage]}
                     alt={`${venture.name} view ${activeImage + 1}`}
-                    className="w-full h-80 object-cover transition-all duration-700 ease-in-out"
+                    className="w-full h-[400px] object-contain bg-white transition-all duration-700 ease-in-out"
                   />
                   {/* Prev / Next arrows */}
                   {venture.gallery.length > 1 && (
