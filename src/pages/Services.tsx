@@ -174,7 +174,7 @@ const processSteps = [
 const stats = [
   { value: '500+', label: 'Plots Delivered' },
   { value: '11', label: 'Active Ventures' },
-  { value: '15+', label: 'Years of Trust' },
+  { value: '10+', label: 'Years of Trust' },
   { value: '100%', label: 'Clear Titles' },
 ];
 

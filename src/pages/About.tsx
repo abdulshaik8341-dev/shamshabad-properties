@@ -64,7 +64,7 @@ export default function About() {
             </h1>
             <div className="gold-divider mt-5" />
             <p className="mt-6 text-lg text-ivory/80 max-w-2xl leading-relaxed">
-              For over 15 years, Shamshabad Real Estate has helped families and
+              For over 10 years, Shamshabad Real Estate has helped families and
               investors find the right plot in the right location — with clear
               titles, complete infrastructure and honest guidance.
             </p>

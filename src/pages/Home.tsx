@@ -23,7 +23,7 @@ import { ventures } from '@/data/ventures';
 const stats = [
   { value: 11, suffix: '', label: 'Premium Ventures' },
   { value: 1390, suffix: '+', label: 'Plots Delivered' },
-  { value: 15, suffix: '+', label: 'Years Experience' },
+  { value: 10, suffix: '+', label: 'Years Experience' },
   { value: 500, suffix: '+', label: 'Happy Families' },
 ];
 
@@ -240,7 +240,7 @@ export default function Home() {
                   className="rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 hidden sm:block rounded-2xl bg-gold p-6 shadow-xl">
-                  <AnimatedNumber value={15} suffix="+" className="font-serif text-3xl font-bold text-emerald" duration={2000} />
+                  <AnimatedNumber value={10} suffix="+" className="font-serif text-3xl font-bold text-emerald" duration={2000} />
                   <div className="text-xs uppercase tracking-wider text-emerald/80">
                     Years of Trust
                   </div>
