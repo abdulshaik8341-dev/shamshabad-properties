@@ -139,22 +139,22 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              to="/blog"
-              className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
-                isActive('/blog') ? 'text-gold' : 'text-ink hover:text-emerald'
-              }`}
-            >
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/contact"
               className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
                 isActive('/contact') ? 'text-gold' : 'text-ink hover:text-emerald'
               }`}
             >
               Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/blog"
+              className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
+                isActive('/blog') ? 'text-gold' : 'text-ink hover:text-emerald'
+              }`}
+            >
+              Blog
             </Link>
           </li>
           {/* Search */}
@@ -290,16 +290,16 @@ export default function Navbar() {
           )}
           
           <Link
-            to="/blog"
-            className="block px-4 py-3 text-sm font-medium text-ink rounded-lg hover:bg-cream"
-          >
-            Blog
-          </Link>
-          <Link
             to="/contact"
             className="block px-4 py-3 text-sm font-medium text-ink rounded-lg hover:bg-cream"
           >
             Contact Us
+          </Link>
+          <Link
+            to="/blog"
+            className="block px-4 py-3 text-sm font-medium text-ink rounded-lg hover:bg-cream"
+          >
+            Blog
           </Link>
           
           {/* Mobile search */}
