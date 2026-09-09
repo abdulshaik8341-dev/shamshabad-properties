@@ -16,22 +16,33 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    lines: ['Shamshabad, Hyderabad', 'Telangana 501218'],
+    lines: [
+      { text: 'Shamshabad, Hyderabad' },
+      { text: 'Telangana 501218' },
+    ],
   },
   {
     icon: Phone,
     title: 'Call Us',
-    lines: ['+91 99082 24832', '+91 72889 92087'],
+    lines: [
+      { text: '+91 99082 24832', href: 'tel:+919908224832' },
+      { text: '+91 72889 92087', href: 'tel:+917288992087' },
+    ],
   },
   {
     icon: Mail,
     title: 'Email Us',
-    lines: ['myproperties90@gmail.com'],
+    lines: [
+      { text: 'myproperties90@gmail.com', href: 'mailto:myproperties90@gmail.com' },
+    ],
   },
   {
     icon: Clock,
     title: 'Working Hours',
-    lines: ['Mon - Sat: 9:30 AM - 7:00 PM', 'Sunday: By Appointment'],
+    lines: [
+      { text: 'Mon - Sat: 9:30 AM - 7:00 PM' },
+      { text: 'Sunday: By Appointment' },
+    ],
   },
 ];
 
@@ -118,7 +129,17 @@ export default function Contact() {
                   </div>
                   <h3 className="font-serif text-xl font-bold text-ivory mb-2">{c.title}</h3>
                   {c.lines.map((line) => (
-                    <p key={line} className="mt-1 text-sm text-ivory/60">{line}</p>
+                    line.href ? (
+                      <a 
+                        key={line.text} 
+                        href={line.href} 
+                        className="block mt-1 text-sm text-ivory/80 hover:text-gold transition-colors font-medium"
+                      >
+                        {line.text}
+                      </a>
+                    ) : (
+                      <p key={line.text} className="mt-1 text-sm text-ivory/60">{line.text}</p>
+                    )
                   ))}
                 </div>
               </ScrollReveal>
