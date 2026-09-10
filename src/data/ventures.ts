@@ -431,11 +431,10 @@ export const ventures: Venture[] = [
     totalPlots: '110 Plots',
     plotSizes: '133 - 267 sq. yds',
     status: 'Open for Booking',
-    image: 'https://images.pexels.com/photos/16753029/pexels-photo-16753029.png?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/indica-homes-1.jpg',
     gallery: [
-      'https://images.pexels.com/photos/17159022/pexels-photo-17159022.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/21077403/pexels-photo-21077403.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/8060005/pexels-photo-8060005.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/indica-homes-1.jpg',
+      '/indica-homes-2.jpg',
     ],
     tagline: 'Modern, ready-to-build homes in a well-connected hub',
     about: [
