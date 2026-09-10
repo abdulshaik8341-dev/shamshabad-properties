@@ -170,8 +170,8 @@ export default function VentureDetail() {
                     src={venture.gallery[activeImage]}
                     alt={`${venture.name} view ${activeImage + 1}`}
                     className={`w-full h-[400px] lg:h-[500px] transition-all duration-700 ease-in-out ${
-                      venture.gallery[activeImage].includes('amity-park-img') || venture.gallery[activeImage].includes('layout') || venture.gallery[activeImage].includes('plan')
-                        ? 'object-contain p-4 bg-white'
+                      venture.gallery[activeImage].includes('amity-park-img') || venture.gallery[activeImage].includes('layout') || venture.gallery[activeImage].includes('plan') || venture.gallery[activeImage].includes('indica-homes')
+                        ? 'object-contain p-4 bg-emerald/5'
                         : 'object-cover'
                     }`}
                   />
@@ -213,8 +213,8 @@ export default function VentureDetail() {
                           src={img}
                           alt={`${venture.name} thumbnail ${i + 1}`}
                           className={`w-full h-24 lg:h-32 ${
-                            img.includes('amity-park-img') || img.includes('layout') || img.includes('plan')
-                              ? 'object-contain bg-white p-2'
+                            img.includes('amity-park-img') || img.includes('layout') || img.includes('plan') || img.includes('indica-homes')
+                              ? 'object-contain bg-emerald/5 p-2'
                               : 'object-cover'
                           }`}
                         />
