@@ -12,9 +12,7 @@ export default function VentureCard({ venture }: { venture: Venture }) {
         <img
           src={venture.image}
           alt={venture.name}
-          className={`h-full w-full transition-transform duration-700 group-hover:scale-110 ${
-            venture.image.includes('indica-homes') ? 'object-cover object-left' : 'object-cover'
-          }`}
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-emerald/70 via-emerald/10 to-transparent" />
