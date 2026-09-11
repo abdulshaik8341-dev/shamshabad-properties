@@ -257,23 +257,24 @@ export default function Services() {
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {mainServices.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 100}>
-                <div className="group h-full overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-emerald/5 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
-                  <div className="h-52 overflow-hidden">
+                <div className="group relative h-[400px] overflow-hidden rounded-2xl shadow-xl transition-all duration-700 hover:shadow-2xl hover:-translate-y-2">
+                  <div className="absolute inset-0">
                     <img
                       src={s.image}
                       alt={s.title}
                       loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-emerald via-emerald/60 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-95" />
                   </div>
-                  <div className="p-6">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
-                      <s.icon className="h-6 w-6" />
+                  <div className="absolute inset-0 p-8 flex flex-col justify-end text-left">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/90 text-emerald mb-5 shadow-lg backdrop-blur-sm transition-transform duration-500 group-hover:scale-110">
+                      <s.icon className="h-5 w-5" />
                     </div>
-                    <h3 className="mt-4 font-serif text-xl font-bold text-emerald">
+                    <h3 className="font-serif text-2xl font-bold text-ivory mb-3 transform transition-transform duration-500 group-hover:-translate-y-2">
                       {s.title}
                     </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-ink-mid">
+                    <p className="text-sm leading-relaxed text-ivory/80 opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 line-clamp-3">
                       {s.description}
                     </p>
                   </div>
@@ -285,35 +286,45 @@ export default function Services() {
       </section>
 
       {/* Support services */}
-      <section className="py-20 lg:py-28 bg-cream">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Complete Property Support"
-            title="Our Support Services"
-            subtitle="We handle everything from legal documentation to registration, loans to NRI support — so your property journey is smooth from start to finish."
-          />
-          <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="py-20 lg:py-28 bg-emerald relative overflow-hidden">
+        {/* Subtle background pattern */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#d4af37 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
+        
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            <p className="eyebrow text-gold-light mb-3">Complete Property Support</p>
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-ivory leading-tight">
+              Our Support Services
+            </h2>
+            <div className="gold-divider mt-5 mx-auto" />
+            <p className="mt-5 text-ivory/70 leading-relaxed">
+              We handle everything from legal documentation to registration, loans to NRI support — so your property journey is smooth from start to finish.
+            </p>
+          </div>
+
+          <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {supportServices.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 80}>
-                <div className="group h-full overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-emerald/5 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+                <div className="group h-full overflow-hidden rounded-2xl bg-white/5 border border-gold/10 backdrop-blur-sm shadow-xl transition-all duration-500 hover:bg-white/10 hover:border-gold/30 hover:-translate-y-2">
                   {'image' in s && s.image && (
-                    <div className="h-48 overflow-hidden">
+                    <div className="h-48 overflow-hidden relative">
                       <img
                         src={s.image}
                         alt={s.title}
                         loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
+                      <div className="absolute inset-0 bg-emerald/20 mix-blend-multiply transition-opacity group-hover:opacity-0" />
                     </div>
                   )}
                   <div className="p-7">
-                    <div className="hidden sm:flex h-14 w-14 items-center justify-center rounded-xl bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
-                      <s.icon className="h-7 w-7" />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/10 text-gold mb-5 transition-all group-hover:bg-gold group-hover:text-emerald">
+                      <s.icon className="h-6 w-6" />
                     </div>
-                    <h3 className="sm:mt-5 font-serif text-xl font-bold text-emerald">
+                    <h3 className="font-serif text-xl font-bold text-ivory">
                       {s.title}
                     </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-ink-mid">
+                    <p className="mt-3 text-sm leading-relaxed text-ivory/70 group-hover:text-ivory/90 transition-colors">
                       {s.description}
                     </p>
                   </div>
