@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-footer text-ivory/70">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-8">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 lg:gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -24,7 +24,7 @@ export default function Footer() {
                 </span>
               </div>
             </div>
-            <p className="text-sm leading-relaxed text-ivory/60 mb-5">
+            <p className="text-sm leading-relaxed text-ivory/60">
               Your trusted real estate partner in the Shamshabad corridor.
               HMDA & DTCP approved premium plotted developments near the
               airport, ORR and Electronic SEZ.
