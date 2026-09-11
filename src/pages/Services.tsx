@@ -317,9 +317,6 @@ export default function Services() {
                     </div>
                   )}
                   <div className="p-7">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/10 text-gold mb-5 transition-all group-hover:bg-gold group-hover:text-emerald">
-                      <s.icon className="h-6 w-6" />
-                    </div>
                     <h3 className="font-serif text-xl font-bold text-ivory">
                       {s.title}
                     </h3>
