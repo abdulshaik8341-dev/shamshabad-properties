@@ -257,24 +257,23 @@ export default function Services() {
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {mainServices.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 100}>
-                <div className="group relative h-[400px] overflow-hidden rounded-2xl shadow-xl transition-all duration-700 hover:shadow-2xl hover:-translate-y-2">
-                  <div className="absolute inset-0">
+                <div className="group h-full overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-emerald/5 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+                  <div className="h-52 overflow-hidden">
                     <img
                       src={s.image}
                       alt={s.title}
                       loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-emerald via-emerald/60 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-95" />
                   </div>
-                  <div className="absolute inset-0 p-8 flex flex-col justify-end text-left">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/90 text-emerald mb-5 shadow-lg backdrop-blur-sm transition-transform duration-500 group-hover:scale-110">
-                      <s.icon className="h-5 w-5" />
+                  <div className="p-6">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald text-gold transition-all group-hover:bg-gold group-hover:text-emerald">
+                      <s.icon className="h-6 w-6" />
                     </div>
-                    <h3 className="font-serif text-2xl font-bold text-ivory mb-3 transform transition-transform duration-500 group-hover:-translate-y-2">
+                    <h3 className="mt-4 font-serif text-xl font-bold text-emerald">
                       {s.title}
                     </h3>
-                    <p className="text-sm leading-relaxed text-ivory/80 opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 line-clamp-3">
+                    <p className="mt-3 text-sm leading-relaxed text-ink-mid">
                       {s.description}
                     </p>
                   </div>
