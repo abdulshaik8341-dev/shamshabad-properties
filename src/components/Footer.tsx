@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { ventures } from '@/data/ventures';
 
 export default function Footer() {
@@ -29,29 +29,7 @@ export default function Footer() {
               HMDA & DTCP approved premium plotted developments near the
               airport, ORR and Electronic SEZ.
             </p>
-            <div className="flex gap-3">
-              <a
-                href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-mid/40 text-gold transition-all hover:bg-gold hover:text-emerald"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-4 w-4" />
-              </a>
-              <a
-                href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-mid/40 text-gold transition-all hover:bg-gold hover:text-emerald"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-4 w-4" />
-              </a>
-              <a
-                href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-mid/40 text-gold transition-all hover:bg-gold hover:text-emerald"
-                aria-label="Youtube"
-              >
-                <Youtube className="h-4 w-4" />
-              </a>
-            </div>
+
           </div>
 
           {/* Quick links */}
