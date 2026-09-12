@@ -229,7 +229,7 @@ export const ventures: Venture[] = [
     ],
     tagline: 'A honeyed woodland retreat at the edge of the city',
     about: [
-      'Madhupala Estates — named for the Sanskrit word for "honey grove" — is a DTCP-approved boutique layout in Narkhuda, conceived as a woodland-inspired residential enclave. Mature trees are preserved wherever possible, and the landscaping favours flowering and fruit-bearing species to attract butterflies and birds.',
+      'Madhupala Estates is a DTCP-approved boutique layout in Narkhuda, conceived as a woodland-inspired residential enclave. Mature trees are preserved wherever possible, and the landscaping favours flowering and fruit-bearing species to attract butterflies and birds.',
       'The 75-plot layout offers a quiet, nature-forward alternative to the dense developments elsewhere in the corridor, while still being within 15 minutes of the airport and the ORR. It is ideal for those who value privacy, greenery and a slower pace of living.',
     ],
     highlights: [
