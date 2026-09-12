@@ -389,11 +389,10 @@ export const ventures: Venture[] = [
     totalPlots: '90 Plots',
     plotSizes: '150 - 300 sq. yds',
     status: 'Selling Fast',
-    image: 'https://images.pexels.com/photos/7294674/pexels-photo-7294674.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/gpr-millennium-1.jpg',
     gallery: [
-      'https://images.pexels.com/photos/6755000/pexels-photo-6755000.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/9936969/pexels-photo-9936969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/7294672/pexels-photo-7294672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/gpr-millennium-1.jpg',
+      '/gpr-millennium-2.jpg',
     ],
     tagline: 'Meadow-inspired living in the heart of Maheshwaram',
     about: [
