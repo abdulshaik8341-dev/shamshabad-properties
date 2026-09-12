@@ -140,11 +140,10 @@ export const ventures: Venture[] = [
     totalPlots: 'Premium Plots',
     plotSizes: '150 - 400 sq. yds',
     status: 'Ready to Move',
-    image: 'https://images.pexels.com/photos/460695/pexels-photo-460695.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/park-city-1.jpg',
     gallery: [
-      'https://images.pexels.com/photos/460695/pexels-photo-460695.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/park-city-1.jpg',
+      '/park-city-2.png',
     ],
     tagline: 'An exclusive HMDA-approved premium layout in the heart of Shamshabad',
     about: [
