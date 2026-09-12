@@ -30,7 +30,7 @@ export default function VentureDetail() {
   // Auto-slideshow: cycle every 3 seconds
   useEffect(() => {
     if (!venture || venture.gallery.length <= 1) return;
-    const timer = setInterval(nextImage, 3000);
+    const timer = setInterval(nextImage, 2000);
     return () => clearInterval(timer);
   }, [venture, nextImage, activeImage]);
 
