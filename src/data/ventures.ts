@@ -89,8 +89,8 @@ export const ventures: Venture[] = [
     locationAdvantages: [
       '10 min to RGIA Airport',
       '5 min to Srisailam Highway',
-      '15 min to ORR Tukkuguda exit',
-      '20 min to Maheshwaram bus depot',
+      '15 min to ORR Narkhuda exit',
+      '20 min to Narkhuda bus depot',
     ],
   },
   {
@@ -109,7 +109,7 @@ export const ventures: Venture[] = [
     ],
     tagline: 'Grand-scale living in the heart of the Shamshabad corridor',
     about: [
-      'Grand Ville is an HMDA-approved premium plotted development in Mansanpally, offering generous plot sizes and grand infrastructure befitting its name. Wide 40-foot roads, a commanding entrance gateway and a sprawling central clubhouse make Grand Ville one of the most ambitious layouts in the Shamshabad belt.',
+      'Grand Ville is an HMDA-approved premium plotted development in Gandiguda, offering generous plot sizes and grand infrastructure befitting its name. Wide 40-foot roads, a commanding entrance gateway and a sprawling central clubhouse make Grand Ville one of the most ambitious layouts in the Shamshabad belt.',
       'With 150 plots laid out across a gently sloping terrain, the development enjoys natural elevation and excellent drainage. Its location between Shamshabad and Maheshwaram places it equidistant from the airport and the upcoming Pharma City corridor.',
     ],
     highlights: [
@@ -148,7 +148,7 @@ export const ventures: Venture[] = [
     ],
     tagline: 'A self-sufficient township on Shamshabad\'s growth path',
     about: [
-      'Southern Township is a large-scale DTCP-approved residential development along Shadnagar Road, designed as a self-sufficient community with provisions for schools, retail and healthcare within the layout. With 200 plots across multiple blocks, it offers the scale and amenities of a mini-township at an accessible price.',
+      'Southern Township is a large-scale DTCP-approved residential development in Ootpally, designed as a self-sufficient community with provisions for schools, retail and healthcare within the layout. With 200 plots across multiple blocks, it offers the scale and amenities of a mini-township at an accessible price.',
       'The township sits on the Shamshabad–Shadnagar growth spine, one of the most actively developing corridors in South Hyderabad. The proximity to the Regional Ring Road alignment and existing highway connectivity makes this an excellent long-term appreciation play.',
     ],
     highlights: [
@@ -190,7 +190,7 @@ export const ventures: Venture[] = [
     ],
     tagline: 'A fly-and-live concept minutes from the airport',
     about: [
-      'North East Fly City is an HMDA-approved gated layout in Muchintal, built around a "fly-and-live" concept that caters to frequent travellers and airline professionals who want premium living within minutes of the airport. The layout features a boutique 100-plot design with aviation-themed landscaping.',
+      'North East Fly City is an HMDA-approved gated layout in Shamshabad, built around a "fly-and-live" concept that caters to frequent travellers and airline professionals who want premium living within minutes of the airport. The layout features a boutique 100-plot design with aviation-themed landscaping.',
       'Located off the Airport Approach Road, North East Fly City offers the closest premium residential option to the RGIA terminal among all our ventures, while remaining connected to the ORR and the city\'s IT corridors via thePV Narasimha Rao Expressway.',
     ],
     highlights: [
@@ -229,7 +229,7 @@ export const ventures: Venture[] = [
     ],
     tagline: 'A honeyed woodland retreat at the edge of the city',
     about: [
-      'Madhupala Estates — named for the Sanskrit word for "honey grove" — is a DTCP-approved boutique layout in Pedda Golconda, conceived as a woodland-inspired residential enclave. Mature trees are preserved wherever possible, and the landscaping favours flowering and fruit-bearing species to attract butterflies and birds.',
+      'Madhupala Estates — named for the Sanskrit word for "honey grove" — is a DTCP-approved boutique layout in Narkhuda, conceived as a woodland-inspired residential enclave. Mature trees are preserved wherever possible, and the landscaping favours flowering and fruit-bearing species to attract butterflies and birds.',
       'The 75-plot layout offers a quiet, nature-forward alternative to the dense developments elsewhere in the corridor, while still being within 15 minutes of the airport and the ORR. It is ideal for those who value privacy, greenery and a slower pace of living.',
     ],
     highlights: [
@@ -272,8 +272,8 @@ export const ventures: Venture[] = [
     ],
     tagline: 'A value-driven township for smart investors',
     about: [
-      'RK Township is a DTCP-approved residential layout in Ravirala, offering one of the best value propositions in the Shamshabad corridor. With 180 plots priced for accessibility, it is designed for first-time buyers and long-term investors who want a foothold in South Hyderabad\'s growth story without a premium price tag.',
-      'The layout sits between the Srisailam Highway and the Ravirala lake belt, benefiting from both highway connectivity and the natural appreciation that lake-adjacent land tends to see as the corridor develops.',
+      'RK Township is a DTCP-approved residential layout in Hayat Nagar, offering one of the best value propositions in the Shamshabad corridor. With 180 plots priced for accessibility, it is designed for first-time buyers and long-term investors who want a foothold in South Hyderabad\'s growth story without a premium price tag.',
+      'The layout sits between the Srisailam Highway and the Hayat Nagar lake belt, benefiting from both highway connectivity and the natural appreciation that lake-adjacent land tends to see as the corridor develops.',
     ],
     highlights: [
       'Best value pricing in our portfolio',
@@ -295,7 +295,7 @@ export const ventures: Venture[] = [
     locationAdvantages: [
       '20 min to RGIA Airport',
       '10 min to Srisailam Highway',
-      '15 min to Ravirala lake',
+      '15 min to Hayat Nagar lake',
       '25 min to ORR',
     ],
   },
@@ -315,7 +315,7 @@ export const ventures: Venture[] = [
     tagline: 'A new dawn of planned living on the Shamshabad periphery',
     about: [
       'Sawera Mooncity — "sawera" meaning dawn — is a DTCP-approved township marking a new era of planned, affordable living on the Shamshabad periphery. The 160-plot layout is organised around a central crescent park, with wide roads radiating outward to create a distinctive, easy-to-navigate street pattern.',
-      'Located in Yenugonda along the developing Shamshabad–Shadnagar belt, Sawera Mooncity targets buyers who want HMDA-grade infrastructure at DTCP pricing. The layout is designed for quick appreciation as the Regional Ring Road and adjacent industrial parks come online.',
+      'Located in Makthaguda along the developing Shamshabad–Shadnagar belt, Sawera Mooncity targets buyers who want HMDA-grade infrastructure at DTCP pricing. The layout is designed for quick appreciation as the Regional Ring Road and adjacent industrial parks come online.',
     ],
     highlights: [
       'Crescent-park centred layout design',
@@ -356,8 +356,8 @@ export const ventures: Venture[] = [
     ],
     tagline: 'A sustainable, eco-conscious gated community',
     about: [
-      'Green City is an HMDA-approved eco-conscious gated community in Kandukur, built around sustainability principles that go beyond conventional layouts. Solar street lighting, rainwater harvesting at scale, organic waste composting and extensive native-plant landscaping make it one of the greenest developments in the Shamshabad corridor.',
-      'With 220 plots spread across a well-planned grid, Green City offers a balance of scale and sustainability. Its location near the ORR Kandukur exit provides fast access to the airport, Financial District and the IT corridor while keeping residents in a green, low-emission environment.',
+      'Green City is an HMDA-approved eco-conscious gated community in Jukal, built around sustainability principles that go beyond conventional layouts. Solar street lighting, rainwater harvesting at scale, organic waste composting and extensive native-plant landscaping make it one of the greenest developments in the Shamshabad corridor.',
+      'With 220 plots spread across a well-planned grid, Green City offers a balance of scale and sustainability. Its location near the ORR Jukal exit provides fast access to the airport, Financial District and the IT corridor while keeping residents in a green, low-emission environment.',
     ],
     highlights: [
       'Eco-conscious, sustainability-first design',
@@ -376,7 +376,7 @@ export const ventures: Venture[] = [
     ],
     locationAdvantages: [
       '15 min to RGIA Airport',
-      '5 min to ORR Kandukur exit',
+      '5 min to ORR Jukal exit',
       '15 min to Financial District via ORR',
       '20 min to Tukkuguda',
     ],
@@ -394,15 +394,15 @@ export const ventures: Venture[] = [
       '/gpr-millennium-1.jpg',
       '/gpr-millennium-2.jpg',
     ],
-    tagline: 'Meadow-inspired living in the heart of Maheshwaram',
+    tagline: 'Meadow-inspired living in the heart of Narkhuda',
     about: [
-      'GPR Millinium Medows is a DTCP-approved boutique layout in Maheshwaram, inspired by open meadow landscapes. The 90-plot development features wide, grassy setbacks, a central meadow park and meandering walking paths that give the community an open, breathable feel uncommon in the corridor.',
-      'Located in the heart of Maheshwaram — one of South Hyderabad\'s most actively traded real estate markets — GPR Millinium Medows sits close to the proposed Metro extension, existing bus depot and the Srisailam Highway, offering both lifestyle and investment merit.',
+      'GPR Millinium Medows is a DTCP-approved boutique layout in Narkhuda, inspired by open meadow landscapes. The 90-plot development features wide, grassy setbacks, a central meadow park and meandering walking paths that give the community an open, breathable feel uncommon in the corridor.',
+      'Located in the heart of Narkhuda — one of South Hyderabad\'s most actively traded real estate markets — GPR Millinium Medows sits close to the proposed Metro extension, existing bus depot and the Srisailam Highway, offering both lifestyle and investment merit.',
     ],
     highlights: [
       'Meadow-inspired open landscaping',
       'Boutique 90-plot exclusive community',
-      'In the heart of Maheshwaram market',
+      'In the heart of Narkhuda market',
       'Close to proposed Metro extension',
     ],
     amenities: [
@@ -417,7 +417,7 @@ export const ventures: Venture[] = [
     ],
     locationAdvantages: [
       '15 min to RGIA Airport',
-      '5 min to Maheshwaram bus depot',
+      '5 min to Narkhuda bus depot',
       '10 min to Srisailam Highway',
       'Walk to proposed Metro station site',
     ],
@@ -437,12 +437,12 @@ export const ventures: Venture[] = [
     ],
     tagline: 'Modern, ready-to-build homes in a well-connected hub',
     about: [
-      'Indica Homes is an HMDA-approved residential layout in Tukkuguda, designed for buyers who want to build and move in quickly. The 110-plot development features fully-laid infrastructure — roads, drainage, water and street lighting — so plots are ready for construction from day one.',
-      'Tukkuguda is emerging as a primary residential hub of the Shamshabad belt, with schools, hospitals, retail and the existing bus depot all within a short radius. Indica Homes sits at the centre of this hub, offering both convenience and strong rental demand potential.',
+      'Indica Homes is an HMDA-approved residential layout in Narkhuda, designed for buyers who want to build and move in quickly. The 110-plot development features fully-laid infrastructure — roads, drainage, water and street lighting — so plots are ready for construction from day one.',
+      'Narkhuda is emerging as a primary residential hub of the Shamshabad belt, with schools, hospitals, retail and the existing bus depot all within a short radius. Indica Homes sits at the centre of this hub, offering both convenience and strong rental demand potential.',
     ],
     highlights: [
       'Ready-to-build with full infrastructure',
-      'In the heart of Tukkuguda hub',
+      'In the heart of Narkhuda hub',
       'Strong rental demand potential',
       'Walk to schools, hospitals & retail',
     ],
@@ -458,8 +458,8 @@ export const ventures: Venture[] = [
     ],
     locationAdvantages: [
       '12 min to RGIA Airport',
-      '5 min to Tukkuguda bus depot',
-      '10 min to ORR Tukkuguda exit',
+      '5 min to Narkhuda bus depot',
+      '10 min to ORR Narkhuda exit',
       'Walk to schools & hospitals',
     ],
   },
