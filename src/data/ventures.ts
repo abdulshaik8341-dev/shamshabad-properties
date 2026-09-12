@@ -140,9 +140,10 @@ export const ventures: Venture[] = [
     totalPlots: 'Premium Plots',
     plotSizes: '150 - 400 sq. yds',
     status: 'Ready to Move',
-    image: '/park-city.jpg',
+    image: '/park-city-1.jpg',
     gallery: [
-      '/park-city.jpg',
+      '/park-city-1.jpg',
+      '/park-city-2.jpg',
     ],
     tagline: 'An exclusive HMDA-approved premium layout in the heart of Shamshabad',
     about: [
