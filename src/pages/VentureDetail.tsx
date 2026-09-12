@@ -21,8 +21,6 @@ export default function VentureDetail() {
   const { slug } = useParams<{ slug: string }>();
   const venture = slug ? getVentureBySlug(slug) : undefined;
   const [activeImage, setActiveImage] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-
   const nextImage = useCallback(() => {
     if (venture) {
       setActiveImage((prev) => (prev + 1) % venture.gallery.length);
@@ -31,10 +29,10 @@ export default function VentureDetail() {
 
   // Auto-slideshow: cycle every 3 seconds
   useEffect(() => {
-    if (!venture || venture.gallery.length <= 1 || isPaused) return;
+    if (!venture || venture.gallery.length <= 1) return;
     const timer = setInterval(nextImage, 3000);
     return () => clearInterval(timer);
-  }, [venture, isPaused, nextImage]);
+  }, [venture, nextImage, activeImage]);
 
   // Reset active image when venture changes
   useEffect(() => {
@@ -161,8 +159,6 @@ export default function VentureDetail() {
 
             <ScrollReveal delay={150}>
               <div
-                onMouseEnter={() => setIsPaused(true)}
-                onMouseLeave={() => setIsPaused(false)}
                 className="flex flex-col gap-4"
               >
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl group ring-1 ring-emerald/5 bg-cream">
