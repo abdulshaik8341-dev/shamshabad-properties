@@ -305,11 +305,10 @@ export const ventures: Venture[] = [
     totalPlots: '160 Plots',
     plotSizes: '133 - 300 sq. yds',
     status: 'New Launch',
-    image: 'https://images.pexels.com/photos/12966707/pexels-photo-12966707.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/sawera-mooncity-1.jpg',
     gallery: [
-      'https://images.pexels.com/photos/33910376/pexels-photo-33910376.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/35235126/pexels-photo-35235126.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/30383863/pexels-photo-30383863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/sawera-mooncity-1.jpg',
+      '/sawera-mooncity-2.jpg',
     ],
     tagline: 'A new dawn of planned living on the Shamshabad periphery',
     about: [
