@@ -348,11 +348,10 @@ export const ventures: Venture[] = [
     totalPlots: '220 Plots',
     plotSizes: '150 - 350 sq. yds',
     status: 'Open for Booking',
-    image: 'https://images.pexels.com/photos/34823932/pexels-photo-34823932.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/green-city-1.jpg',
     gallery: [
-      'https://images.pexels.com/photos/4320475/pexels-photo-4320475.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/4320449/pexels-photo-4320449.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      'https://images.pexels.com/photos/35105443/pexels-photo-35105443.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/green-city-2.jpg',
+      '/green-city-1.jpg',
     ],
     tagline: 'A sustainable, eco-conscious gated community',
     about: [
