@@ -96,7 +96,7 @@ export const ventures: Venture[] = [
   {
     slug: 'grand-ville',
     name: 'Grand Ville',
-    location: 'Mansanpally, Shamshabad',
+    location: 'Gandiguda, Shamshabad',
     approval: 'HMDA Approved',
     totalPlots: '150 Plots',
     plotSizes: '167 - 400 sq. yds',
@@ -135,7 +135,7 @@ export const ventures: Venture[] = [
   {
     slug: 'southern-township',
     name: 'Southern Township',
-    location: 'Shadnagar Road, Shamshabad',
+    location: 'Ootpally, Shamshabad',
     approval: 'DTCP Approved',
     totalPlots: '200 Plots',
     plotSizes: '120 - 300 sq. yds',
@@ -178,7 +178,7 @@ export const ventures: Venture[] = [
   {
     slug: 'north-east-fly-city',
     name: 'North East Fly City',
-    location: 'Muchintal, Shamshabad',
+    location: 'Shamshabad',
     approval: 'HMDA Approved',
     totalPlots: '100 Plots',
     plotSizes: '150 - 250 sq. yds',
@@ -217,7 +217,7 @@ export const ventures: Venture[] = [
   {
     slug: 'madhupala-estates',
     name: 'Madhupala Estates',
-    location: 'Pedda Golconda, Shamshabad',
+    location: 'Narkhuda, Shamshabad',
     approval: 'DTCP Approved',
     totalPlots: '75 Plots',
     plotSizes: '133 - 240 sq. yds',
@@ -259,7 +259,7 @@ export const ventures: Venture[] = [
   {
     slug: 'rk-township',
     name: 'RK Township',
-    location: 'Ravirala, Shamshabad',
+    location: 'Hayat Nagar, Shamshabad',
     approval: 'DTCP Approved',
     totalPlots: '180 Plots',
     plotSizes: '120 - 267 sq. yds',
@@ -302,7 +302,7 @@ export const ventures: Venture[] = [
   {
     slug: 'sawera-mooncity',
     name: 'Sawera Mooncity',
-    location: 'Yenugonda, Shamshabad Belt',
+    location: 'Makthaguda, Shamshabad',
     approval: 'DTCP Approved',
     totalPlots: '160 Plots',
     plotSizes: '133 - 300 sq. yds',
@@ -344,7 +344,7 @@ export const ventures: Venture[] = [
   {
     slug: 'green-city',
     name: 'Green City',
-    location: 'Kandukur, Shamshabad',
+    location: 'Jukal, Shamshabad',
     approval: 'HMDA Approved',
     totalPlots: '220 Plots',
     plotSizes: '150 - 350 sq. yds',
@@ -384,7 +384,7 @@ export const ventures: Venture[] = [
   {
     slug: 'gpr-millinium-medows',
     name: 'GPR Millinium Medows',
-    location: 'Maheshwaram, Shamshabad',
+    location: 'Narkhuda, Shamshabad',
     approval: 'DTCP Approved',
     totalPlots: '90 Plots',
     plotSizes: '150 - 300 sq. yds',
@@ -425,7 +425,7 @@ export const ventures: Venture[] = [
   {
     slug: 'indica-homes',
     name: 'Indica Homes',
-    location: 'Tukkuguda, Shamshabad',
+    location: 'Narkhuda, Shamshabad',
     approval: 'HMDA Approved',
     totalPlots: '110 Plots',
     plotSizes: '133 - 267 sq. yds',
