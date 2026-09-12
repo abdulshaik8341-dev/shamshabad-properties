@@ -173,7 +173,7 @@ export const ventures: Venture[] = [
       '15 min to Financial District',
       'Close to major schools & hospitals',
     ],
-  }
+  },
   {
     slug: 'north-east-fly-city',
     name: 'North East Fly City',
