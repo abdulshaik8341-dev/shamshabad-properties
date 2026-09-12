@@ -40,7 +40,13 @@ export default function VentureDetail() {
   }, [slug]);
 
   if (!venture) {
-    return <Navigate to="/ventures" replace />;
+    return (
+      <div className="pt-32 pb-20 text-center min-h-[60vh] flex flex-col items-center justify-center">
+        <h1 className="font-serif text-3xl font-bold text-emerald mb-4">Venture Not Found</h1>
+        <p className="text-ink-mid mb-8">The venture you are looking for does not exist or has been removed.</p>
+        <Link to="/ventures" className="btn-primary">Back to Ventures</Link>
+      </div>
+    );
   }
 
   const otherVentures = ventures.filter((v) => v.slug !== venture.slug).slice(0, 3);

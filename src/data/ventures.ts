@@ -267,6 +267,7 @@ export const ventures: Venture[] = [
     image: '/rk-township-thumbnail.jpg',
     gallery: [
       '/rk-township-thumbnail.jpg',
+      '/rk-township-2.jpg',
     ],
     tagline: 'A value-driven township for smart investors',
     about: [
