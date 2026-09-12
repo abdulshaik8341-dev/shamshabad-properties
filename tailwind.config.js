@@ -44,12 +44,17 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         },
+        heartbeat: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+        },
       },
       animation: {
         fadeInUp: 'fadeInUp 0.7s ease-out forwards',
         fadeIn: 'fadeIn 0.8s ease-out forwards',
         scaleIn: 'scaleIn 0.6s ease-out forwards',
         marquee: 'marquee 30s linear infinite',
+        heartbeat: 'heartbeat 2.5s ease-in-out infinite',
       },
     },
   },

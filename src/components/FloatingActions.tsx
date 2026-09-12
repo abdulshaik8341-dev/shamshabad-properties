@@ -39,7 +39,7 @@ export default function FloatingActions() {
     >
       <button
         onClick={handleWhatsApp}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-lg shadow-[#25D366]/30 transition-all hover:scale-110 hover:shadow-xl hover:shadow-[#25D366]/40"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-lg shadow-[#25D366]/30 transition-all hover:scale-110 hover:shadow-xl hover:shadow-[#25D366]/40 animate-heartbeat hover:animate-none"
         aria-label="Chat on WhatsApp"
       >
         <WhatsAppIcon className="h-7 w-7 text-white" />
