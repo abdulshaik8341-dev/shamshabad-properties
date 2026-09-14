@@ -1,3 +1,4 @@
+import { useSEO } from '@/hooks/useSEO';
 import { Link } from 'react-router-dom';
 import {
   Sprout,
@@ -202,6 +203,12 @@ const whyChooseUs = [
 ];
 
 export default function Services() {
+  useSEO({
+    title: `Our Services`,
+    description: `We offer comprehensive real estate services including plot sales, land development, legal assistance, and investment consulting.`,
+    canonicalUrl: `https://www.shamshabadrealestate.in/services`,
+  });
+
   return (
     <div className="pt-20">
       {/* Hero */}

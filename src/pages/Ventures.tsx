@@ -1,3 +1,4 @@
+import { useSEO } from '@/hooks/useSEO';
 import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
@@ -5,6 +6,12 @@ import VentureCard from '@/components/VentureCard';
 import { ventures } from '@/data/ventures';
 
 export default function Ventures() {
+  useSEO({
+    title: `Our Ventures`,
+    description: `Browse our portfolio of premium residential plots, HMDA & DTCP approved layouts, and open lands in Shamshabad.`,
+    canonicalUrl: `https://www.shamshabadrealestate.in/ventures`,
+  });
+
   return (
     <div className="pt-20">
       {/* Hero */}

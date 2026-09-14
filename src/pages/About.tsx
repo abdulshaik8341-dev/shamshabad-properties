@@ -1,3 +1,4 @@
+import { useSEO } from '@/hooks/useSEO';
 import { Link } from 'react-router-dom';
 import {
   Target,
@@ -73,6 +74,12 @@ const teamFeatures = [
 ];
 
 export default function About() {
+  useSEO({
+    title: `About Us`,
+    description: `Learn more about Shamshabad Real Estate, our legacy of trust, and our commitment to offering the best plots.`,
+    canonicalUrl: `https://www.shamshabadrealestate.in/about`,
+  });
+
   return (
     <div className="pt-20">
       {/* Page hero */}

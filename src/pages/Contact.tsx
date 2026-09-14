@@ -1,3 +1,4 @@
+import { useSEO } from '@/hooks/useSEO';
 import { useState, FormEvent } from 'react';
 import {
   MapPin,
@@ -49,6 +50,12 @@ const contactInfo = [
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
 export default function Contact() {
+  useSEO({
+    title: `Contact Us`,
+    description: `Get in touch with Shamshabad Real Estate for inquiries about premium plots, open lands, and investment opportunities in Hyderabad.`,
+    canonicalUrl: `https://www.shamshabadrealestate.in/contact`,
+  });
+
   const [status, setStatus] = useState<FormStatus>('idle');
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -129,10 +136,10 @@ export default function Contact() {
                   </div>
                   <h3 className="font-serif text-xl font-bold text-ivory mb-2">{c.title}</h3>
                   {c.lines.map((line) => (
-                    line.href ? (
+                    'href' in line ? (
                       <a 
                         key={line.text} 
-                        href={line.href} 
+                        href={(line as any).href} 
                         className="block mt-1 text-sm text-ivory/80 hover:text-gold transition-colors font-medium"
                       >
                         {line.text}
@@ -323,3 +330,4 @@ export default function Contact() {
     </div>
   );
 }
+

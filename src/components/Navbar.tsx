@@ -9,7 +9,7 @@ export default function Navbar() {
   const [mobileVenturesOpen, setMobileVenturesOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const searchRef = useRef<HTMLDivElement>(null);
+  const searchRef = useRef<HTMLLIElement>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -344,3 +344,4 @@ export default function Navbar() {
     </header>
   );
 }
+

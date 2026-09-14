@@ -1,3 +1,4 @@
+import { useSEO } from '@/hooks/useSEO';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { useState, useEffect, useCallback } from 'react';
 import {
@@ -20,6 +21,13 @@ import VentureCard from '@/components/VentureCard';
 export default function VentureDetail() {
   const { slug } = useParams<{ slug: string }>();
   const venture = slug ? getVentureBySlug(slug) : undefined;
+
+  useSEO({
+    title: venture ? `${venture.name} | Plots in ${venture.location}` : 'Venture Not Found',
+    description: venture ? (venture.tagline || `Discover ${venture.name}, offering premium ${venture.plotSizes} in ${venture.location}.`) : 'This venture does not exist.',
+    canonicalUrl: venture ? `https://www.shamshabadrealestate.in/ventures/${venture.slug}` : undefined,
+  });
+
   const [activeImage, setActiveImage] = useState(0);
   const nextImage = useCallback(() => {
     if (venture) {

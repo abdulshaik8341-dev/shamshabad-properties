@@ -1,3 +1,4 @@
+import { useSEO } from '@/hooks/useSEO';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Calendar, Clock, ArrowLeft, ChevronRight, ArrowRight, User } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
@@ -6,6 +7,13 @@ import { getPostBySlug, blogPosts } from '@/data/blog';
 export default function BlogDetail() {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getPostBySlug(slug) : undefined;
+
+  useSEO({
+    title: post ? `${post.title} | Shamshabad Real Estate Blog` : 'Post Not Found',
+    description: post ? post.excerpt : undefined,
+    canonicalUrl: post ? `https://www.shamshabadrealestate.in/blog/${post.slug}` : undefined,
+  });
+
 
   if (!post) {
     return <Navigate to="/blog" replace />;

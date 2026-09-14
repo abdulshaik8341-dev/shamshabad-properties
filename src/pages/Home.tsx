@@ -1,3 +1,4 @@
+import { useSEO } from '@/hooks/useSEO';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import {
@@ -121,6 +122,12 @@ const testimonials = [
 ];
 
 export default function Home() {
+  useSEO({
+    title: `Premium Plots & Open Lands in Hyderabad`,
+    description: `Discover premium HMDA & DTCP approved plots in Shamshabad, Hyderabad. Explore open lands, ready-to-move ventures.`,
+    canonicalUrl: `https://www.shamshabadrealestate.in/`,
+  });
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {

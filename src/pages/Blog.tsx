@@ -1,9 +1,16 @@
+import { useSEO } from '@/hooks/useSEO';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight, ArrowLeft } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 import { blogPosts } from '@/data/blog';
 
 export default function Blog() {
+  useSEO({
+    title: `Real Estate Blog`,
+    description: `Read the latest news, investment tips, and market insights for real estate in Shamshabad and Hyderabad.`,
+    canonicalUrl: `https://www.shamshabadrealestate.in/blog`,
+  });
+
   const [featured, ...rest] = blogPosts;
 
   return (
