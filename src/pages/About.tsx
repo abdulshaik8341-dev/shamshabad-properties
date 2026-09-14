@@ -127,13 +127,13 @@ export default function About() {
                 </h2>
                 <div className="gold-divider mt-5" />
                 <p className="mt-5 text-ink-mid leading-relaxed">
-                  Looking to buy or sell a plot in South Hyderabad? Shamshabad Real estate is your trusted Real Estate partner, helping buyers and sellers connect with the right opportunities across Shamshabad and Airport Road, Ootpally, Narkhuda , Gandiguda, Rallaguda, Mamidipally, & bangalore Highway and nearby developing areas.
+                  Looking to buy or sell a plot in South Hyderabad? Browse our <Link to="/ventures" className="text-emerald hover:text-gold font-medium underline underline-offset-2 hover:underline">premium HMDA approved plots</Link> to find your perfect fit. Shamshabad Real estate is your trusted Real Estate partner, helping buyers and sellers connect with the right opportunities across Shamshabad and Airport Road, Ootpally, Narkhuda , Gandiguda, Rallaguda, Mamidipally, & bangalore Highway and nearby developing areas.
                 </p>
                 <p className="mt-4 text-ink-mid leading-relaxed">
                   We specialize in buying and selling residential plots, HMDA & DTCP approved layouts, open plots, resale plots and investment properties. Whether you're a first-time buyer or an experienced investor, our team is committed to helping you find the right property at the right price.
                 </p>
                 <p className="mt-4 text-ink-mid leading-relaxed">
-                  If you own a plot and are planning to sell, we help you get the best possible market price through our local market expertise and extensive network of genuine buyers.
+                  If you own a plot and are planning to sell, we help you get the best possible market price. <Link to="/contact" className="text-emerald hover:text-gold font-medium underline underline-offset-2 hover:underline">Contact our experts</Link> for a free valuation.
                 </p>
               </div>
             </ScrollReveal>

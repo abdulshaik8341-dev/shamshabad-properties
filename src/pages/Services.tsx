@@ -304,7 +304,7 @@ export default function Services() {
             </h2>
             <div className="gold-divider mt-5 mx-auto" />
             <p className="mt-5 text-ivory/70 leading-relaxed">
-              We handle everything from legal documentation to registration, loans to NRI support — so your property journey is smooth from start to finish.
+              We handle everything from legal documentation to registration, loans to NRI support. Ready to begin? Browse our <Link to="/ventures" className="text-gold hover:text-white font-medium underline underline-offset-2 hover:underline">premium real estate ventures</Link> — so your property journey is smooth from start to finish.
             </p>
           </div>
 
