@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shamshabad-properties.vercel.app/sitemap.xml
+Sitemap: https://www.shamshabadrealestate.in/sitemap.xml
+
