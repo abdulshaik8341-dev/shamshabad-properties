@@ -148,7 +148,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <img
             src="https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1920"
-            alt="Shamshabad aerial view"
+            alt="Aerial view of Shamshabad real estate and HMDA approved premium open plots in South Hyderabad"
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-emerald/90 via-emerald/70 to-emerald/30" />
@@ -243,7 +243,7 @@ export default function Home() {
               <div className="relative">
                 <img
                   src="https://images.pexels.com/photos/8815909/pexels-photo-8815909.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                  alt="Real estate handshake"
+                  alt="Shamshabad Real Estate experts shaking hands with a new plot buyer after a successful registration"
                   className="rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 hidden sm:block rounded-2xl bg-gold p-6 shadow-xl">
@@ -326,7 +326,7 @@ export default function Home() {
                     <div className="relative h-48 w-full overflow-hidden">
                       <img
                         src={item.image}
-                        alt={item.title}
+                        alt={`${item.title} - Shamshabad Real Estate highlights and features`}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-emerald/90 via-transparent to-transparent opacity-80" />
@@ -360,7 +360,7 @@ export default function Home() {
         <div className="absolute inset-0 opacity-10">
           <img
             src="https://images.pexels.com/photos/4456656/pexels-photo-4456656.jpeg?auto=compress&cs=tinysrgb&h=800&w=1920"
-            alt="Hyderabad skyline"
+            alt="Hyderabad skyline representing the fast-growing real estate market in the Shamshabad corridor"
             className="h-full w-full object-cover"
           />
         </div>
@@ -428,7 +428,7 @@ export default function Home() {
         <div className="absolute inset-0 opacity-5">
           <img
             src="https://images.pexels.com/photos/2516858/pexels-photo-2516858.jpeg?auto=compress&cs=tinysrgb&h=800&w=1920"
-            alt=""
+            alt="Subtle background showing residential property investments in South Hyderabad"
             className="h-full w-full object-cover"
           />
         </div>

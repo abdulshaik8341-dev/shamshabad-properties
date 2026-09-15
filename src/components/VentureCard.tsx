@@ -11,7 +11,7 @@ export default function VentureCard({ venture }: { venture: Venture }) {
       <div className="relative h-56 overflow-hidden">
         <img
           src={venture.image}
-          alt={venture.name}
+          alt={`Premium Open Plots and Land for Sale in ${venture.name}, ${venture.location}`}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
           loading="lazy"
         />

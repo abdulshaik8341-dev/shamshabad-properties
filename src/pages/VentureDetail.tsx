@@ -87,7 +87,7 @@ export default function VentureDetail() {
         <div className="absolute inset-0">
           <img
             src={venture.image}
-            alt={venture.name}
+            alt={`${venture.name} - HMDA & DTCP Approved Premium Plots in ${venture.location}`}
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-emerald/95 via-emerald/80 to-emerald/50" />
@@ -178,7 +178,7 @@ export default function VentureDetail() {
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl group ring-1 ring-emerald/5 bg-cream">
                   <img
                     src={venture.gallery[activeImage]}
-                    alt={`${venture.name} view ${activeImage + 1}`}
+                    alt={`Gallery view ${activeImage + 1} of ${venture.name} residential open plots in ${venture.location}`}
                     className={`w-full h-[400px] lg:h-[500px] transition-all duration-700 ease-in-out ${
                       venture.gallery[activeImage].includes('amity-park-img') || venture.gallery[activeImage].includes('layout') || venture.gallery[activeImage].includes('plan')
                         ? 'object-contain p-4 bg-emerald/5'
@@ -221,7 +221,7 @@ export default function VentureDetail() {
                       >
                         <img
                           src={img}
-                          alt={`${venture.name} thumbnail ${i + 1}`}
+                          alt={`Thumbnail ${i + 1} for ${venture.name} real estate layout in Shamshabad`}
                           className={`w-full h-24 lg:h-32 ${
                             img.includes('amity-park-img') || img.includes('layout') || img.includes('plan')
                               ? 'object-contain bg-emerald/5 p-2'
@@ -294,7 +294,7 @@ export default function VentureDetail() {
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
                   src={venture.gallery[1] || venture.image}
-                  alt={`${venture.name} location`}
+                  alt={`Location overview of ${venture.name} plotting project near ${venture.location}`}
                   className="w-full h-96 object-cover"
                 />
               </div>

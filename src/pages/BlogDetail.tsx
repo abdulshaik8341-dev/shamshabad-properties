@@ -41,7 +41,7 @@ export default function BlogDetail() {
         <div className="absolute inset-0">
           <img
             src={post.image}
-            alt={post.title}
+            alt={`${post.title} - Shamshabad Real Estate Blog Insight`}
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-emerald/95 via-emerald/80 to-emerald/60" />
@@ -131,7 +131,7 @@ export default function BlogDetail() {
                   <div className="relative h-44 overflow-hidden">
                     <img
                       src={p.image}
-                      alt={p.title}
+                      alt={`${p.title} - Related Real Estate Article`}
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                     />
