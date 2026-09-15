@@ -39,7 +39,7 @@ export default function BlogDetail() {
       {/* Hero */}
       <section className="relative py-16 lg:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={post.image}
             alt={`${post.title} - Shamshabad Real Estate Blog Insight`}
             className="h-full w-full object-cover"

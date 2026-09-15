@@ -48,7 +48,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3 group">
-          <img
+          <img loading="lazy"
             src="/logo-emblem.png"
             alt="Shamshabad Real Estate"
             className="h-11 w-11 rounded-full object-cover bg-white ring-2 ring-gold/50 shadow-sm transition-all duration-300 group-hover:ring-gold group-hover:scale-105"

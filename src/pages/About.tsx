@@ -85,7 +85,7 @@ export default function About() {
       {/* Page hero */}
       <section className="relative py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src="https://images.pexels.com/photos/12966707/pexels-photo-12966707.jpeg?auto=compress&cs=tinysrgb&h=800&w=1920"
             alt="Hyderabad cityscape showcasing the booming real estate and open plot market near Shamshabad Airport"
             className="h-full w-full object-cover"
@@ -113,7 +113,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <ScrollReveal>
-              <img
+              <img loading="lazy"
                 src="https://images.pexels.com/photos/7415055/pexels-photo-7415055.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                 alt="Shamshabad Real Estate team discussing premium open plot investments and layout development"
                 className="rounded-2xl shadow-2xl"

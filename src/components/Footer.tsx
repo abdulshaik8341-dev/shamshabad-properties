@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img
+              <img loading="lazy"
                 src="/logo-emblem.png"
                 alt="Shamshabad Real Estate"
                 className="h-12 w-12 rounded-full object-cover bg-white ring-2 ring-gold/50 shadow-md p-0.5"

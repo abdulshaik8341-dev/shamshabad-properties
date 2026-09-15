@@ -241,7 +241,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <ScrollReveal>
               <div className="relative">
-                <img
+                <img loading="lazy"
                   src="https://images.pexels.com/photos/8815909/pexels-photo-8815909.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="Shamshabad Real Estate experts shaking hands with a new plot buyer after a successful registration"
                   className="rounded-2xl shadow-2xl"
@@ -324,7 +324,7 @@ export default function Home() {
                 <div className="group h-full rounded-2xl bg-white shadow-lg ring-1 ring-emerald/5 overflow-hidden transition-all duration-500 hover:shadow-xl hover:ring-gold/20 hover:-translate-y-1">
                   {item.image && (
                     <div className="relative h-48 w-full overflow-hidden">
-                      <img
+                      <img loading="lazy"
                         src={item.image}
                         alt={`${item.title} - Shamshabad Real Estate highlights and features`}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -358,7 +358,7 @@ export default function Home() {
       {/* Location highlights */}
       <section className="py-20 lg:py-28 bg-emerald relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img
+          <img loading="lazy"
             src="https://images.pexels.com/photos/4456656/pexels-photo-4456656.jpeg?auto=compress&cs=tinysrgb&h=800&w=1920"
             alt="Hyderabad skyline representing the fast-growing real estate market in the Shamshabad corridor"
             className="h-full w-full object-cover"
@@ -426,7 +426,7 @@ export default function Home() {
       {/* CTA */}
       <section className="py-20 bg-footer relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <img
+          <img loading="lazy"
             src="https://images.pexels.com/photos/2516858/pexels-photo-2516858.jpeg?auto=compress&cs=tinysrgb&h=800&w=1920"
             alt="Subtle background showing residential property investments in South Hyderabad"
             className="h-full w-full object-cover"

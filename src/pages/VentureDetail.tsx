@@ -85,7 +85,7 @@ export default function VentureDetail() {
       {/* Hero */}
       <section className="relative py-16 lg:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={venture.image}
             alt={`${venture.name} - HMDA & DTCP Approved Premium Plots in ${venture.location}`}
             className="h-full w-full object-cover"
@@ -176,7 +176,7 @@ export default function VentureDetail() {
                 className="flex flex-col gap-4"
               >
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl group ring-1 ring-emerald/5 bg-cream">
-                  <img
+                  <img loading="lazy"
                     src={venture.gallery[activeImage]}
                     alt={`Gallery view ${activeImage + 1} of ${venture.name} residential open plots in ${venture.location}`}
                     className={`w-full h-[400px] lg:h-[500px] transition-all duration-700 ease-in-out ${
@@ -219,7 +219,7 @@ export default function VentureDetail() {
                             : 'ring-1 ring-emerald/10 hover:ring-gold/50 opacity-70 hover:opacity-100'
                         }`}
                       >
-                        <img
+                        <img loading="lazy"
                           src={img}
                           alt={`Thumbnail ${i + 1} for ${venture.name} real estate layout in Shamshabad`}
                           className={`w-full h-24 lg:h-32 ${
@@ -292,7 +292,7 @@ export default function VentureDetail() {
             </ScrollReveal>
             <ScrollReveal delay={150}>
               <div className="rounded-2xl overflow-hidden shadow-xl">
-                <img
+                <img loading="lazy"
                   src={venture.gallery[1] || venture.image}
                   alt={`Location overview of ${venture.name} plotting project near ${venture.location}`}
                   className="w-full h-96 object-cover"

@@ -18,7 +18,7 @@ export default function Blog() {
       {/* Hero */}
       <section className="relative py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src="https://images.pexels.com/photos/35235126/pexels-photo-35235126.jpeg?auto=compress&cs=tinysrgb&h=800&w=1920"
             alt="Blog"
             className="h-full w-full object-cover"
@@ -50,7 +50,7 @@ export default function Blog() {
               className="group grid lg:grid-cols-2 gap-8 lg:gap-12 items-center rounded-2xl overflow-hidden bg-white shadow-xl ring-1 ring-emerald/5 transition-all hover:shadow-2xl"
             >
               <div className="relative h-64 lg:h-80 overflow-hidden">
-                <img
+                <img loading="lazy"
                   src={featured.image}
                   alt={featured.title}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"

@@ -214,7 +214,7 @@ export default function Services() {
       {/* Hero */}
       <section className="relative py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src="https://images.pexels.com/photos/2516858/pexels-photo-2516858.jpeg?auto=compress&cs=tinysrgb&h=800&w=1920"
             alt="Our services"
             className="h-full w-full object-cover"
