@@ -21,8 +21,8 @@ export const ventures: Venture[] = [
     name: 'Moghul Gardens',
     location: 'Shamshabad, Hyderabad',
     approval: 'HMDA Approved',
-    totalPlots: '120 Plots',
-    plotSizes: '150 - 300 sq. yds',
+    totalPlots: '2000 Plots',
+    plotSizes: '500 sq. yds',
     status: 'Open for Booking',
     image: 'https://i.ibb.co/VcJvjkFc/mughal-garden.webp',
     gallery: [
@@ -99,7 +99,7 @@ export const ventures: Venture[] = [
     location: 'Gandiguda, Shamshabad',
     approval: 'HMDA Approved',
     totalPlots: '150 Plots',
-    plotSizes: '167 - 400 sq. yds',
+    plotSizes: '240 sq. yds onwards',
     status: 'Open for Booking',
     image: '/grand-ville-thumbnail.webp',
     gallery: [
