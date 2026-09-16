@@ -30,14 +30,14 @@ const stats = [
 
 const heroSlides = [
   {
-    title: 'Find Your Dream Plot in ',
+    title: 'Premium HMDA Approved Open Plots in ',
     highlight: 'Shamshabad',
     subtitle:
       'HMDA & DTCP approved premium plotted developments in the fastest-growing real estate corridor of South Hyderabad — near ORR, International Airport & Electronic SEZ.',
   },
   {
-    title: 'Smart Investments in ',
-    highlight: 'Growing Land',
+    title: 'High-Return Real Estate Investments in ',
+    highlight: 'South Hyderabad',
     subtitle:
       'Plots in Shamshabad have appreciated 2.5x–4x over the past decade. Invest today in HMDA & DTCP approved layouts with clear titles and ready infrastructure.',
   },
@@ -466,3 +466,4 @@ export default function Home() {
     </div>
   );
 }
+
