@@ -9,7 +9,7 @@ export default function VentureCard({ venture }: { venture: Venture }) {
       className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-emerald/5 transition-all duration-500 hover:shadow-2xl hover:ring-gold/30 hover:-translate-y-1.5"
     >
       <div className="relative h-56 overflow-hidden">
-        <img
+        <img width="800" height="600"
           src={venture.image}
           alt={`Premium Open Plots and Land for Sale in ${venture.name}, ${venture.location}`}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
