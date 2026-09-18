@@ -147,10 +147,13 @@ export default function Home() {
       <section className="relative flex min-h-screen items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1920"
-            alt="Aerial view of Shamshabad real estate and HMDA approved premium open plots in South Hyderabad"
-            className="h-full w-full object-cover"
-          />
+              src="https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&w=1920"
+              srcSet="https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&w=640 640w, https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&w=1024 1024w, https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&w=1920 1920w"
+              sizes="100vw"
+              fetchpriority="high"
+              alt="Aerial view of Shamshabad real estate and HMDA approved premium open plots in South Hyderabad"
+              className="h-full w-full object-cover"
+            />
           <div className="absolute inset-0 bg-gradient-to-r from-emerald/90 via-emerald/70 to-emerald/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-emerald/60 via-transparent to-emerald/20" />
         </div>
@@ -466,4 +469,5 @@ export default function Home() {
     </div>
   );
 }
+
 
