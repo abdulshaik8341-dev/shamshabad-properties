@@ -44,7 +44,7 @@ export default function Navbar() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 bg-ivory/95 py-2 shadow-md backdrop-blur-md"
+      className="fixed top-0 left-0 right-0 z-50 bg-ivory py-2 shadow-md"
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3 group">
@@ -214,7 +214,7 @@ export default function Navbar() {
 
         <Link
           to="/contact"
-          className="hidden lg:inline-flex items-center justify-center gap-2 rounded-full border border-gold/50 bg-gold/15 px-6 py-2.5 text-sm font-semibold uppercase tracking-wider text-emerald backdrop-blur-md transition-all duration-300 hover:border-gold/80 hover:bg-gold/30 hover:shadow-lg hover:shadow-gold/20"
+          className="hidden lg:inline-flex items-center justify-center gap-2 rounded-full border border-gold/50 bg-gold/15 px-6 py-2.5 text-sm font-semibold uppercase tracking-wider text-emerald transition-all duration-300 hover:border-gold/80 hover:bg-gold/30 hover:shadow-lg hover:shadow-gold/20"
         >
           Enquire Now
         </Link>
@@ -335,7 +335,7 @@ export default function Navbar() {
           
           <Link
             to="/contact"
-            className="mt-4 block rounded-full border border-gold/50 bg-gold/15 px-4 py-3 text-center text-sm font-semibold uppercase tracking-wider text-emerald backdrop-blur-md transition-all duration-300 hover:border-gold/80 hover:bg-gold/30"
+            className="mt-4 block rounded-full border border-gold/50 bg-gold/15 px-4 py-3 text-center text-sm font-semibold uppercase tracking-wider text-emerald transition-all duration-300 hover:border-gold/80 hover:bg-gold/30"
           >
             Enquire Now
           </Link>
@@ -344,4 +344,5 @@ export default function Navbar() {
     </header>
   );
 }
+
 
