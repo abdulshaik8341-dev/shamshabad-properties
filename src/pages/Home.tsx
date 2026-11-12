@@ -150,7 +150,7 @@ export default function Home() {
               src="https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&w=1920"
               srcSet="https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&w=640 640w, https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&w=1024 1024w, https://images.pexels.com/photos/6875496/pexels-photo-6875496.jpeg?auto=compress&cs=tinysrgb&w=1920 1920w"
               sizes="100vw"
-              fetchpriority="high"
+              fetchPriority="high"
               alt="Aerial view of Shamshabad real estate and HMDA approved premium open plots in South Hyderabad"
               className="h-full w-full object-cover"
             />
