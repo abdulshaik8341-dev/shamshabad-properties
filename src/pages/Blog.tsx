@@ -92,7 +92,7 @@ export default function Blog() {
                       <img
                         loading="lazy"
                         src={featured.image}
-                        alt={`${featured.title} - Shamshabad Real Estate Blog`}
+                        alt={featured.imageAlt}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                       <div className="absolute top-4 left-4">
@@ -150,7 +150,7 @@ export default function Blog() {
                         <div className="relative h-48 overflow-hidden">
                           <img
                             src={post.image}
-                            alt={`${post.title} - Shamshabad Real Estate Article`}
+                            alt={post.imageAlt}
                             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                             loading="lazy"
                           />

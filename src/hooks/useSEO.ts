@@ -4,9 +4,11 @@ interface SEOProps {
   title: string;
   description?: string;
   canonicalUrl?: string;
+  keywords?: string;
+  ogImage?: string;
 }
 
-export function useSEO({ title, description, canonicalUrl }: SEOProps) {
+export function useSEO({ title, description, canonicalUrl, keywords, ogImage }: SEOProps) {
   useEffect(() => {
     // Set title
     const siteName = 'Shamshabad Real Estate';
@@ -22,7 +24,7 @@ export function useSEO({ title, description, canonicalUrl }: SEOProps) {
         document.head.appendChild(metaDesc);
       }
       metaDesc.setAttribute('content', description);
-      
+
       // Also set og:description
       let ogDesc = document.querySelector('meta[property="og:description"]');
       if (!ogDesc) {
@@ -32,7 +34,29 @@ export function useSEO({ title, description, canonicalUrl }: SEOProps) {
       }
       ogDesc.setAttribute('content', description);
     }
-    
+
+    // Set meta keywords
+    if (keywords) {
+      let metaKeywords = document.querySelector('meta[name="keywords"]');
+      if (!metaKeywords) {
+        metaKeywords = document.createElement('meta');
+        metaKeywords.setAttribute('name', 'keywords');
+        document.head.appendChild(metaKeywords);
+      }
+      metaKeywords.setAttribute('content', keywords);
+    }
+
+    // Set og:image
+    if (ogImage) {
+      let ogImg = document.querySelector('meta[property="og:image"]');
+      if (!ogImg) {
+        ogImg = document.createElement('meta');
+        ogImg.setAttribute('property', 'og:image');
+        document.head.appendChild(ogImg);
+      }
+      ogImg.setAttribute('content', ogImage);
+    }
+
     // Set og:title
     let ogTitle = document.querySelector('meta[property="og:title"]');
     if (!ogTitle) {
@@ -51,7 +75,7 @@ export function useSEO({ title, description, canonicalUrl }: SEOProps) {
         document.head.appendChild(linkCanonical);
       }
       linkCanonical.setAttribute('href', canonicalUrl);
-      
+
       // Set og:url
       let ogUrl = document.querySelector('meta[property="og:url"]');
       if (!ogUrl) {
@@ -61,5 +85,5 @@ export function useSEO({ title, description, canonicalUrl }: SEOProps) {
       }
       ogUrl.setAttribute('content', canonicalUrl);
     }
-  }, [title, description, canonicalUrl]);
+  }, [title, description, canonicalUrl, keywords, ogImage]);
 }

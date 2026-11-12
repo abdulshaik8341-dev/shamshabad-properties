@@ -18,6 +18,12 @@ export function urlFor(source: SanityImageSource) {
   return imageBuilder.image(source);
 }
 
+export interface BlogSEO {
+  metaTitle?: string;
+  metaDescription?: string;
+  focusKeyword?: string;
+}
+
 export interface UnifiedBlogPost {
   slug: string;
   title: string;
@@ -26,8 +32,10 @@ export interface UnifiedBlogPost {
   date: string;
   author: string;
   image: string;
+  imageAlt: string;
   readTime: string;
   body: PortableTextBlock[] | string[];
+  seo?: BlogSEO;
   source: 'sanity' | 'local';
 }
 
@@ -40,14 +48,17 @@ interface RawSanityPost {
   author?: string;
   mainImage?: SanityImageSource;
   imageUrl?: string;
+  imageAlt?: string;
   readTime?: string;
+  bodyText?: string;
   body?: PortableTextBlock[];
+  seo?: BlogSEO;
 }
 
 const DEFAULT_BLOG_IMAGE =
   'https://images.pexels.com/photos/4456656/pexels-photo-4456656.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
 
-const POSTS_QUERY = `*[_type == "post" && defined(slug.current)] | order(coalesce(publishedAt, _createdAt) desc) {
+const POST_FIELDS = `{
   "slug": slug.current,
   title,
   "excerpt": coalesce(excerpt, pt::text(body[0..0]), ""),
@@ -56,22 +67,26 @@ const POSTS_QUERY = `*[_type == "post" && defined(slug.current)] | order(coalesc
   "author": coalesce(author->name, author, "Shamshabad Real Estate Team"),
   mainImage,
   "imageUrl": coalesce(mainImage.asset->url, image.asset->url),
-  "readTime": coalesce(readTime, "4 min read"),
-  body
+  "imageAlt": mainImage.alt,
+  readTime,
+  "bodyText": pt::text(body),
+  body,
+  seo {
+    metaTitle,
+    metaDescription,
+    focusKeyword
+  }
 }`;
 
-const SINGLE_POST_QUERY = `*[_type == "post" && slug.current == $slug][0] {
-  "slug": slug.current,
-  title,
-  "excerpt": coalesce(excerpt, pt::text(body[0..0]), ""),
-  "category": coalesce(category, categories[0]->title, "Market Insights"),
-  "date": coalesce(publishedAt, _createdAt),
-  "author": coalesce(author->name, author, "Shamshabad Real Estate Team"),
-  mainImage,
-  "imageUrl": coalesce(mainImage.asset->url, image.asset->url),
-  "readTime": coalesce(readTime, "4 min read"),
-  body
-}`;
+const POSTS_QUERY = `*[_type == "post" && defined(slug.current)] | order(coalesce(publishedAt, _createdAt) desc) ${POST_FIELDS}`;
+const SINGLE_POST_QUERY = `*[_type == "post" && slug.current == $slug][0] ${POST_FIELDS}`;
+
+function estimateReadTime(text?: string): string {
+  if (!text) return '3 min read';
+  const words = text.trim().split(/\s+/).filter(Boolean).length;
+  const minutes = Math.max(1, Math.ceil(words / 200));
+  return `${minutes} min read`;
+}
 
 function mapSanityPost(raw: RawSanityPost): UnifiedBlogPost | null {
   if (!raw.slug || !raw.title) return null;
@@ -93,8 +108,10 @@ function mapSanityPost(raw: RawSanityPost): UnifiedBlogPost | null {
     date: raw.date || new Date().toISOString(),
     author: raw.author || 'Shamshabad Real Estate Team',
     image: resolvedImage,
-    readTime: raw.readTime || '4 min read',
+    imageAlt: raw.imageAlt || `${raw.title} - Shamshabad Real Estate`,
+    readTime: raw.readTime || estimateReadTime(raw.bodyText),
     body: Array.isArray(raw.body) ? raw.body : [],
+    seo: raw.seo,
     source: 'sanity',
   };
 }
@@ -108,6 +125,7 @@ function mapLocalPosts(): UnifiedBlogPost[] {
     date: post.date,
     author: post.author,
     image: post.image,
+    imageAlt: `${post.title} - Shamshabad Real Estate`,
     readTime: post.readTime,
     body: post.content,
     source: 'local',
@@ -160,6 +178,7 @@ export async function fetchBlogPostBySlug(
         date: localPost.date,
         author: localPost.author,
         image: localPost.image,
+        imageAlt: `${localPost.title} - Shamshabad Real Estate`,
         readTime: localPost.readTime,
         body: localPost.content,
         source: 'local',
@@ -184,6 +203,7 @@ export async function fetchBlogPostBySlug(
         date: localPost.date,
         author: localPost.author,
         image: localPost.image,
+        imageAlt: `${localPost.title} - Shamshabad Real Estate`,
         readTime: localPost.readTime,
         body: localPost.content,
         source: 'local',

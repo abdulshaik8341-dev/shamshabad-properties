@@ -111,9 +111,13 @@ export default function BlogDetail() {
   }, [slug]);
 
   useSEO({
-    title: post ? `${post.title} | Shamshabad Real Estate Blog` : 'Real Estate Blog',
-    description: post ? post.excerpt : undefined,
+    title: post
+      ? post.seo?.metaTitle || `${post.title} | Shamshabad Real Estate Blog`
+      : 'Real Estate Blog',
+    description: post ? post.seo?.metaDescription || post.excerpt : undefined,
     canonicalUrl: post ? `https://www.shamshabadrealestate.in/blog/${post.slug}` : undefined,
+    keywords: post?.seo?.focusKeyword,
+    ogImage: post?.image,
   });
 
   if (loading) {
@@ -157,7 +161,7 @@ export default function BlogDetail() {
           <img
             loading="lazy"
             src={post.image}
-            alt={`${post.title} - Shamshabad Real Estate Blog Insight`}
+            alt={post.imageAlt}
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-emerald/95 via-emerald/80 to-emerald/60" />
@@ -259,7 +263,7 @@ export default function BlogDetail() {
                     <div className="relative h-44 overflow-hidden">
                       <img
                         src={p.image}
-                        alt={`${p.title} - Related Real Estate Article`}
+                        alt={p.imageAlt}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                         loading="lazy"
                       />
